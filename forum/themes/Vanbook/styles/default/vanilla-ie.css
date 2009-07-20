@@ -1,0 +1,54 @@
+/*----- Password Request Form -----*/
+
+.SiteContainer.PasswordRequest,
+.SiteContainer.Apply {
+	position: relative;
+	}
+	
+.PasswordRequest .About,
+.Apply .About {
+	margin: 0 !important;
+	left: 0 !important;
+	}
+
+/*----- Navigation -----*/	
+
+#Header ul {
+	padding: 8px !important;
+	padding-top: 12px !important;
+	margin-top: -6px !important;
+	}
+	
+/*----- Content Body -----*/
+	
+#ContentBody {
+	height: 100%;
+	overflow: hidden;
+	}
+	
+#Discussions {
+	float: left;
+	}
+	
+/*----- Comments Page -----*/
+
+#CommentsPage .ContentInfo.Top h1 {
+	width: 100% !important;
+	}
+	
+/*----- Account Page -----*/
+
+#AccountPage #Panel {
+	border-right: none !important;
+	}
+
+#AccountPage #Content {
+	border-left: 1px solid #B7B7B7 !important;
+	height: 100%;
+	overflow: hidden;
+	}
+	
+#AccountPage .Identity #CustomInfo {
+	height: 100%;
+	overflow: hidden;
+	}

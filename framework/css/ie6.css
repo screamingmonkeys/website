@@ -1,0 +1,7 @@
+.imgborder{border:10px solid #5F3F29; margin:10px 0;}
+.stripViewer{width:500px !important; left:0px;}
+.stripViewer .panelContainer .panel{width:470px;}
+.stripViewer .panelContainer .panel .wrapper{width:470px;}
+#message{width:430px; height:130px; overflow:auto;}
+.submitbutton{left:-5px; top:-5px;}
+#IE6_warning{display:block;}

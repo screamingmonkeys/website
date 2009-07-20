@@ -1,0 +1,1231 @@
+/*Grace 1.0 By Sam El http://www.ventswap.com*/
+	body {
+	background: #FFF;
+	color: #333;
+	font: 400 88% "Times New Roman", Times, serif;
+	}
+	a {
+	color: #111;
+	text-decoration: underline;
+	outline: none;
+	}
+	a:hover {
+	text-decoration: none;
+	color: #FF0084;
+	}
+	#pgbottom {
+	text-decoration: none !important;
+	height: 1px;
+	width: 1px;
+	font-size: 1px;
+	}
+	/* Errors & Success */
+	.ErrorContainer {
+	padding: 10px 10px 10px 27px !important;
+	margin-bottom: 20px!important;
+	overflow: hidden;
+	border-top: 1px solid #CC0066;
+	border-bottom: 1px solid #CC0066;
+	background: #FFE1ED;
+	}
+	.ErrorTitle {
+	font-weight: 700;
+	font-size: 16px;
+	color: #C00 !important;
+	}
+	.Error {
+	color: #C00 !important;
+	}
+	#Success {
+	border-top: 1px solid #9C9;
+	border-bottom: 1px solid #9C9;
+	background: #E2F9E3;
+	color: #060 !important;
+	display: block;
+	line-height: 200%;
+	text-align: center;
+	margin-bottom: 10px !important;
+	}
+	/* Remove System Message Button */
+	.Notice {
+	background: #FFC;
+	border-top: 1px solid #F9DF76;
+	border-bottom: 1px solid #F9DF76;
+	font-size: 13px;
+	padding: 8px;
+	margin-bottom: 20px;
+	line-height: 150%;
+	}
+	.Notice span {
+	float: right;
+	display: block;
+	}
+	/* Header & TOP NAVIGATION */
+	#Header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #000 url('header-bg.gif') no-repeat right bottom;
+	color: #FFF;
+	float: left;
+	border-bottom: 5px solid #FF2E9A;
+	}
+	#Header a {
+	color: #F1F1F1;
+	text-decoration: none;
+	}
+	#Header a:hover {
+	color: #FF2E9A;
+	}
+	#Header #Title {
+	float: left;
+	width: 70%;
+	margin: 4% 0 3% 3%;
+	font-size: 275%;
+	font-weight: 100;
+	letter-spacing: -1px;
+	display: block;
+	}
+	#Header #Date {
+	float: right;
+	text-align: right;
+	padding: 0;
+	margin: 1% 3% 0 0;
+	width: 22%;
+	}
+	#Header #Nav {
+	width: 92%;
+	margin: 0;
+	padding: 0 4%;
+	float: left;
+	clear: both;
+	}
+	#Header #Nav ul {
+	padding: 0;
+	margin: 0;
+	}
+	#Header #Nav ul li {
+	display: inline;
+	text-align: center;
+	width: auto;
+	margin: 0;
+	}
+	#Header #Nav ul li a {
+	padding: 7px 9px;
+	font-size: 110%;
+	font-weight: 700;
+	text-decoration: none;
+	line-height: 30px;
+	height: 30px;
+	}
+	#Header #Nav ul li.TabOn a, #Header #Nav ul li.TabOn a:hover {
+	background: transparent url('tab-on.gif') repeat-x left bottom;
+	color: #FFF;
+	}
+	/* Wrapper, Content, Panel & Footer */
+	#Wrapper {
+	margin: 0;
+	padding: 0;
+	}
+	#Main {
+	margin: 0;
+	padding: 0 4%;
+	}
+	#Content {
+	float: left;
+	margin: .5% 0;
+	padding: 0;
+	width: 76%;
+	background: #FFF url('fade-middle.jpg') repeat-y right top;
+	}
+	#Content #Top {
+	height: 22px;
+	background: transparent url('fade-top.jpg') no-repeat right top;
+	}
+	#Content #Bottom {
+	height: 22px;
+	background: transparent url('fade-bottom.jpg') no-repeat right bottom;
+	}
+	#Content #LeftContent{
+	padding: 0 8% 0 0;
+	margin: 0;
+	min-height: 400px;
+	}
+	#Panel {
+	margin: 4% 0;
+	width: 22%;
+	float: right;
+	}
+	#Panel #Holder {
+	margin: 0;
+	padding-left: 12%;
+	}
+	#Panel #SignIn {
+	padding: 5px 0;
+	margin: 0 0 15px;
+	border-top: 1px solid #FFD6EC;
+	border-bottom: 1px solid #FFD6EC;
+	background: #FFF0F8;
+	text-align: center;
+	}
+	#Panel #SignIn a {
+	line-height: 25px;
+	}
+	#Panel h2 {
+	margin: 10px 0;
+	padding: 0 0 5px;
+	font-size:150%;
+	font-weight: 100;
+	border-bottom: 1px solid #F9D2E3;
+	}
+	#Panel select {
+	width: 100%;
+	margin-top: 3px;
+	}
+	#Panel ul ul li {
+	margin-bottom: 3px;
+	overflow: hidden;
+	}
+	#Panel ul ul li a {
+	font-size: 120%;
+	display: block;
+	line-height: 25px;
+	width: 100%;
+	text-decoration: none;
+	background-color: #FAFAFA;
+	}
+	#Panel ul ul li a span {
+	font-size: 12px;
+	}
+	#Panel ul ul li a:hover {
+	background: transparent url('arrow-bottom.gif') no-repeat right bottom;
+	}
+	#AboutVanilla {
+	margin: 20px 0 !important;
+	border-top: 1px solid #EAEAEA;
+	background-color: #FAFAFA;
+	padding: 5px 0 !important;
+	text-align: center;
+	color: #BBB !important;
+	}
+	#AboutVanilla a {
+	color: #D0D0D0 !important;
+	text-decoration: none;
+	}
+	#AboutVanilla a:hover {
+	color: #AAA !important;
+	text-decoration: underline;
+	}
+	.floatLeft {
+	float: left;
+	}
+	#Footer {
+	margin: 0;
+	padding: 0 4%;
+	float: left;
+	width: 92%;
+	background: #000 url('footer-bg.gif') repeat-x 0 0;
+	color: #FAFAFA;
+	}
+	#Footer a {
+	color: #F1F1F1;
+	text-decoration: underline;
+	line-height: 25px;
+	}
+	#Footer a:hover {
+	text-decoration: none;
+	color: #FF2E9A;
+	}
+	#Footer #Links {
+	float: left;
+	margin: 0;
+	padding: 20px 0 0;
+	width: 48%;
+	height: auto;
+	display: block;
+	}
+	#Footer #About {
+	padding: 20px 0;
+	float: right;
+	width: 48%;
+	display: block;
+	text-align: justify;
+	line-height: 20px;
+	}
+	#Footer #About h2 {
+	margin: 0 0 5px;
+	padding: 0 0 5px;
+	color: #FF2E9A;
+	font: 700 16px "Times New Roman", Times, serif;
+	border-bottom: 2px dotted #FF2E9A;
+	}
+	.Invisible {
+	display: none;
+	}
+	/* Discussion Index & Comments */
+	.ContentInfo {
+	text-align: right;
+	}
+	.ContentInfo.Top {
+	white-space: nowrap;
+	overflow: hidden;
+	}
+	#DiscussionsPage .Bottom {
+	margin: 10px 0 0;
+	font-size: 10px;
+	}
+	.ContentInfo *, .PageInfo {
+	font-size: 15px;
+	font-weight: 700;
+	}
+	#Content h1 {
+	font-size: 170%;
+	font-weight: 100;
+	margin: 0 25px 10px 0;
+	padding: 3px 0 0 34px;
+	float: left;
+	text-align: left;
+	background: transparent url('content-bullet.gif') no-repeat 0 0;
+	line-height: 23px;
+	white-space: nowrap;
+	}
+	#CommentsPage #Content h1 {
+	font-size: 140%;
+	font-weight: 100;
+	}
+	#CommentsPage #Content h1 a {
+	font-size: 95%;
+	font-weight: 100;
+	color: #FF0084;
+	}
+	.PageInfo {
+	color: #F9D2E3;
+	border-bottom: 1px solid #FFD6EC;
+	line-height: 22px;
+	clear: both;
+	}
+	.PageInfo p {
+	display: inline;
+	float: left;
+	}
+	.PageList {
+	border-top: 1px solid #FFD6EC;
+	}
+	.PageList li {
+	display: inline;
+	}
+	.PageList a, .PageList li a {
+	text-decoration: none;
+	}
+	.PageList .CurrentPage, .PageList a:hover, .PageList li a:hover {
+	text-decoration: none;
+	color: #F9D2E3 !important;
+	}
+	#PageJump {
+	margin: 5px 15px 0 20px;
+	float: right;
+	}
+	.TopOfPage {
+	margin: 0;
+	float: right;
+	width: 22px;
+	height: 24px;
+	display: block;
+	}
+	#Discussions {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px!important;
+	}
+	.Discussion {
+	overflow: hidden;
+	width: 100%;
+	line-height: 200%;
+	}
+	.DiscussionTopic, .User.Name {
+	overflow: hidden;
+	}
+	.DiscussionTopic span {
+	display: none;
+	}
+	#CommentResults .DiscussionTopic, #CommentResults .CommentText, #CommentResults .DiscussionCategory {
+	float: left;
+	display: block;
+	width: 99%;
+	}
+	#CommentResults .DiscussionTopic a {
+	display: block;
+	line-height: 30px;
+	}
+	#Discussions .Topics {
+	margin: 10px 0 0;
+	padding: 0;
+	}
+	#Discussions .Topics .TopicInfo {
+	margin: 0;
+	padding: 5px 0 20px;
+	background: transparent url('dots.png') repeat-x left bottom;
+	overflow: hidden;
+	}
+	.DiscussionTopic a, #Discussions .Topics .TopicTitle {
+	font-size: 140%;
+	font-weight: 100;
+	}
+	.DiscussionTopic a, #Discussions .Topics .TopicTitle a {
+	color: #FF0084;
+	}
+	.DiscussionTopic a:hover, #Discussions .Topics .TopicTitle a:hover {
+	text-decoration: none;
+	}
+	.User.Name a {
+	text-decoration: underline !important;
+	font-weight: 700;
+	}
+	#Discussions .Topics .DiscussionStarted, #Discussions .Topics .DiscussionCategory, #Discussions .Topics .DiscussionComments, #Discussions .Topics .DiscussionLastComment, #Discussions .Topics .DiscussionActive, #Discussions .Topics .DiscussionNew {
+	display: inline;
+	float: left;
+	font-size: 110%;
+	font-weight: 100;
+	line-height: 25px;
+	margin: 0;
+	}
+	#Discussions .Topics .DiscussionStarted, #Discussions .Topics .DiscussionCategory, #Discussions .Topics .DiscussionLastComment, #Discussions .Topics .DiscussionActive {
+	width: 41%;
+	}
+	#Discussions .Topics .DiscussionComments, #Discussions .Topics .DiscussionNew {
+	width: 18%;
+	text-align: right;
+	}
+	.DiscussionNew a {
+	color: #FF0084 !important;
+	}
+	/* Category Index */
+	#CategoryPage #Content .ContentInfo{
+	border-bottom: 1px solid #FFD6EC;
+	}
+	#Categories {
+	margin: 0 0 20px !important;
+	float: left;
+	width: 100%;
+	}
+	.BlockedCategory {
+	background: #FFF0F8;
+	}
+	#Categories li ul {
+	padding: 10px 0;
+	border-bottom: 1px solid #FFD6EC;
+	}
+	#Categories li li {
+	height: auto;
+	border: 0;
+	}
+	.Category {
+	overflow: hidden;
+	width: 100%;
+	}
+	.CategoryName a {
+	font-size:140%;
+	font-weight: 100;
+	color: #FF0084;
+	}
+	.CategoryName span, .CategoryDescription span, .CategoryName.Normal {
+	display: none;
+	}
+	.CategoryDescription {
+	margin-top: 10px;
+	font-size: 100%;
+	line-height: 170%;
+	overflow: hidden;
+	}
+	.CategoryDiscussionCount, .CategoryOptions {
+	width: auto;
+	display: inline;
+	margin-right: 10px!important;
+	}
+	/* Comments */
+	#Comments li {
+	margin: 0;
+	padding: 5px 0;
+	}
+	#Comments li.Hidden {
+	background: #FFF0F8;
+	}
+	#Comments .CommentHeader {
+	padding: 8px;
+	text-align: right;
+	line-height: 230%;
+	}
+	#Comments .CommentHeader ul {
+	float: left;
+	}
+	#Comments .CommentHeader li {
+	display: inline;
+	color: #BBB;
+	border-bottom: 0;
+	}
+	#Comments .CommentHeader li div.CommentIcon {
+	padding: 9px 0 7px 30px;
+	margin-right: 6px;
+	background-repeat: no-repeat;
+	display: inline;
+	background: transparent center center no-repeat;
+	}
+	#Comments .CommentHeader li span {
+	display: none;
+	}
+	#Comments .CommentHeader a.WhisperBack {
+	padding-left: 10px;
+	color: #BBB;
+	text-decoration: underline;
+	font-weight: 400;
+	}
+	#Comments .CommentHeader em {
+	color: #BBB;
+	font-style: normal;
+	}
+	#Comments li.Hidden .CommentHeader i {
+	padding-left: 8px;
+	color: #C00;
+	font-style: normal;
+	}
+	#Comments .CommentHeader a {
+	font-weight: 700;
+	}
+	#Comments .CommentHeader span a {
+	font-weight: 400;
+	margin-left: 3px;
+	padding-left: 3px;
+	text-decoration: underline;
+	}
+	#Comments .CommentHeader span a:hover {
+	text-decoration: none;
+	}
+	#Comments .CommentNotice {
+	padding: 6px;
+	text-align: center;
+	border-top: 1px solid #FFD6EC;
+	border-bottom: 1px solid #FFD6EC;
+	color: #333 !important;
+	margin: 10px 0;
+	}
+	#Comments .CommentBody {
+	display: block;
+	margin: 0;
+	padding: 20px;
+	font-size: 115%;
+	line-height: 150%;
+	border: 1px solid #FFD6EC;
+	}
+	#Comments .CommentBody ul li, #Comments .CommentBody ol li {
+	border-bottom: 0;
+	padding: 0;
+	}
+	#CommentsPage .ContentInfo.Middle .PageInfo {
+	border-top: 0;
+	margin: 0;
+	}
+	#CommentsPage .ContentInfo.Bottom {
+	margin-bottom: 20px;
+	}
+	#Comments code {
+	border: 1px solid #FFD6EC;
+	border-width: 1px 1px 1px 6px;
+	padding: 8px;
+	padding-left: 16px;
+	display: block;
+	white-space: pre;
+	}
+	/* Search Page */
+	#Form.Search {
+	width: 99% !important;
+	padding: 0 !important;
+	}
+	html>body #Form.Search {
+	width: 100% !important;
+	}
+	#Form.Search fieldset legend {
+	padding: 0 !important;
+	margin-bottom: 6px;
+	color: #333;
+	}
+	#SearchSimple {
+	margin: 0 !important;
+	}
+	#SearchSimple label {
+	display: inline !important;
+	width: 10px !important;
+	}
+	#MainSearchInput #txtKeywords, .SearchInput {
+	width: 60% !important;
+	margin-left: 0 !important;
+	border: 1px solid #FFD6EC;
+	height: 20px;
+	}
+	#MainSearchInput label {
+	display: none !important;
+	}
+	#Form.Search .Submit input {
+	margin: 0 !important;
+	}
+	#SimpleSearchRadios input {
+	width: auto !important;
+	margin: 0 2px 0 12px;
+	}
+	#SimpleSearchRadios label {
+	font-weight: 400 !important;
+	}
+	/* Advanced Search Form */
+	.SearchSwitch {
+	display: block;
+	float: right;
+	margin-top: -25px!important;
+	}
+	#SearchDiscussionFields, #SearchCommentFields, #SearchUserFields {
+	display: none;
+	}
+	.AdvancedSearchInput {
+	width: 60% !important;
+	}
+	.AdvancedUserInput, #DiscussionAutoCompleteResults, #CommentAutoCompleteResults {
+	width: 160px !important;
+	}
+	#ddRoles, #ddOrder, #ddCommentCategories, #ddDiscussionCategories {
+	width: auto !important;
+	}
+	#SearchPage .Bottom .PageInfo {
+	margin-top: 0 !important;
+	border-top: 0 !important;
+	}
+	/* Comment Search Results */
+	#CommentResults .CommentText span {
+	display: none;
+	}
+	#CommentResults .CommentText span.Highlight {
+	display: inline;
+	}
+	#CommentResults .CommentText, #CommentResults .SearchComment, #UserResults .UserAccount {
+	overflow: hidden;
+	width: 100%;
+	}
+	#CommentResults .CommentText span.Highlight {
+	display: inline;
+	}
+	#CommentResults li ul {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	background: transparent url('dots.png') repeat-x left bottom;
+	}
+	#CommentResults .CommentText, #CommentResults .CommentText a {
+	margin: 5px 0 10px!important;
+	}
+	#CommentResults .CommentAuthor, .CommentAdded {
+	width: auto;
+	display: inline;
+	margin: 0 10px 0 0 !important;
+	}
+	/* User Search Results */
+	#UserResults li {
+	border-top: 1px solid #FFF;
+	}
+	#UserResults li ul {
+	margin-top: 0 !important;
+	}
+	#UserResults li li {
+	height: auto;
+	border: 0;
+	}
+	#UserResults li ul {
+	padding: 10px 6px 15px;
+	}
+	li.User {
+	display: inline;
+	font-size: 12px;
+	margin-right: 5px !important;
+	}
+	li.User.Name {
+	display: block;
+	font-size: 100%;
+	line-height: 150%;
+	}
+	li.User.Name .UserIcon {
+	padding: 9px 0 9px 30px !important;
+	margin-right: 6px !important;
+	background-repeat: no-repeat !important;
+	display: inline !important;
+	background: center center no-repeat;
+	}
+	li.User.Name a {
+	font-size: 14px;
+	}
+	li.User.Name.WithIcon {
+	line-height: 250%;
+	}
+	li.User.Name a:hover {
+	text-decoration: none !important;
+	}
+	li.User.Name span {
+	display: none;
+	}
+	/* Forms */
+	#Form {
+	margin-bottom: 10px;
+	width: 100%;
+	}
+	#Form fieldset {
+	border: 0;
+	clear: none;
+	margin-bottom: 20px;
+	}
+	#Form fieldset legend {
+	padding: 4px 0;
+	margin: 0;
+	font: 100 1.5em "Times New Roman", Times, serif;
+	}
+	#Form form {
+	margin: 0;
+	padding: 10px 20px;
+	border-top: 1px solid #FFD6EC;
+	border-bottom: 1px solid #FFD6EC;
+	background: #FFF0F8;
+	}
+	#Form li {
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-weight: 700;
+	}
+	#Form label a {
+	margin: 0 1px -3px 0;
+	float: right;
+	padding: 3px 7px;
+	text-decoration: none;
+	font-weight: 400;
+	border: 1px solid #FFD6EC;
+	}
+	#WhisperUsername, #WhisperAutoCompleteResults {
+	width: 200px;
+	border: 1px solid #FFD6EC;
+	height: 20px;
+	}
+	#Form textarea, #Form input, #Form select {
+	font-size: 13px;
+	font-weight: 400;
+	}
+	#Form textarea {
+	width: 99.5%;
+	height: 150px;
+	}
+	#Form textarea.SmallCommentBox {
+	height: 150px;
+	}
+	#Form textarea.LargeCommentBox {
+	height: 400px;
+	}
+	#Form textarea {
+	border: 1px solid #FFD6EC;
+	}
+	#Form .Button.SubmitButton {
+	margin-right: 10px;
+	}
+	/* Add Comment & Start Discussion Forms */
+	#Form.StartDiscussion legend, #PostPage #Form.AddComments legend {
+	padding-top: 0;
+	}
+	.AddComments {
+	width: 99%;
+	}
+	#Form.AddComments {
+	width: 100%;
+	}
+	#Form.AddComments fieldset {
+	margin: 0;
+	}
+	#Form.AddComments form {
+	margin-top: 0 !important;
+	}
+	#Form.StartDiscussion label, #Form.AddComments label {
+	display: block;
+	width: 100%;
+	font-weight: 700;
+	}
+	#Form.StartDiscussion label.Radio, #Form.AddComments label.Radio {
+	display: inline !important;
+	width: auto !important;
+	}
+	#Form.AddComments {
+	margin: 0 0 4px;
+	padding: 4px 0 0;
+	}
+	#PostPage #Form.AddComments {
+	padding: 0;
+	}
+	.DiscussionBox {
+	width: 400px;
+	border: 1px solid #F9D2E3;
+	height: 20px;
+	}
+	#Form .Button {
+	width: auto !important;
+	}
+	#Form.AddComments a, #Form.StartDiscussion a, #Form.AddComments #CommentFormats label {
+	font-weight: 400;
+	}
+	#CommentFormats input {
+	margin: 0 2px 0 12px;
+	}
+	/* Account Section Forms */
+	.Account {
+	width: 450px;
+	margin: 0 !important;
+	}
+	.Account p {
+	font-size: 16px;
+	}
+	#Form.Account h2 {
+	font-size: 14px;
+	margin-bottom: 10px;
+	}
+	#Form.Account p {
+	padding-bottom: 10px;
+	}
+	#Form.Account ul p {
+	padding: 0;
+	}
+	#Form.Account label {
+	display: block;
+	width: 80%;
+	line-height: 18px;
+	margin-bottom: 4px;
+	}
+	/* Globals Form */
+	#Form.GlobalsForm label {
+	float: left;
+	}
+	#Form.Extensions label {
+	width: 100%;
+	}
+	#Form.Account .Description span label, #Form.Account label small {
+	font-weight: 400;
+	}
+	#Form.Account input, #Form.Account select {
+	width: 40%;
+	}
+	#Form.GlobalsForm input, #Form.GlobalsForm select {
+	width: 59%;
+	}
+	.Description {
+	margin: 3px 0 !important;
+	padding: 3px 0 5px !important;
+	font-size: 16px;
+	}
+	#Form.Account p span {
+	display: block;
+	margin-top: 5px;
+	}
+	#Form.Account p span label {
+	float: none;
+	display: inline;
+	margin-left: 5px;
+	font-weight: 700;
+	line-height: 20px;
+	width: 90%;
+	}
+	#Form.Account p span input {
+	width: 14px;
+	}
+	#Form.Preferences p span label {
+	font-weight: 400;
+	}
+	#Form.GlobalsForm select.SmallSelect {
+	font-size: 14px;
+	width: 50px;
+	}
+	#Form.GlobalsForm #ForumOptions p span label {
+	font-weight: 400 !important;
+	}
+	#Form.GlobalsForm #ForumOptions {
+	margin-bottom: 20px;
+	}
+	#Form.GlobalsForm p {
+	margin-bottom: 10px;
+	}
+	/* Update Check form */
+	.UpdateOld .Name, .UpdateGood .Name, .UpdateUnknown .Name, .UpdateChecking .Name {
+	padding: 0 0 4px 23px !important;
+	}
+	.UpdateOld .Details, .UpdateGood .Details, .UpdateUnknown .Details, .UpdateChecking .Details {
+	font-weight: 400;
+	}
+	.UpdateGood {
+	background: #FFFB97;
+	}
+	.UpdateOld, .UpdateUnknown, .UpdateChecking {
+	background: #FFFEEC;
+	}
+	.UpdateOld .Name {
+	background: url('ico.alert.gif') no-repeat top left;
+	}
+	.UpdateGood .Name {
+	background: url('ico.check.gif') no-repeat top left;
+	}
+	.UpdateUnknown .Name {
+	background: url('ico.unknown.gif') no-repeat top left;
+	}
+	.UpdateChecking .Name {
+	background: url('progress.gif') no-repeat center left;
+	}
+	/* RoleEdit Form & Category List */
+	#Form.CategoryList .RoleBlocked {
+	background: #F4F4C2 url('disabled-tile.gif');
+	}
+	#Form.RoleEditForm li p span label, #Form.CategoryForm li p span label {
+	font-weight: 400 !important;
+	}
+	/* Custom form for extensions management screen */
+	#Form.Extensions {
+	margin: 0 0 20px !important;
+	}
+	div.Extensions ul {
+	border: 1px solid #FFD6EC;
+	border-bottom: 0;
+	margin: 10px 0 20px!important;
+	}
+	div.Extensions ul li {
+	border-bottom: 1px solid #FFD6EC;
+	margin: 0 !important;
+	padding: 10px !important;
+	overflow: hidden;
+	}
+	div.Extensions ul li.Enabled {
+	background: #FEFECB;
+	}
+	div.Extensions ul li.Disabled {
+	background-color: #FFEBF6;
+	}
+	div.Extensions ul li.Processing {
+	background: #FEFECB;
+	}
+	div.Extensions ul li.Processing label {
+	background: url('progress.gif') no-repeat center left;
+	}
+	div.Extensions ul li.Processing input {
+	display: none;
+	}
+	div.Extensions ul li.Processing * {
+	color: #B9AB7E !important;
+	}
+	div.Extensions h3 {
+	font-size: 13px;
+	}
+	div.Extensions h3 label {
+	display: inline !important;
+	padding-left: 20px !important;
+	}
+	div.Extensions ul li input {
+	width: auto !important;
+	margin-top: 3px !important;
+	float: left;
+	}
+	div.Extensions h3 a {
+	color: #1EB136 !important;
+	text-decoration: none;
+	}
+	div.Extensions h3 a:hover {
+	text-decoration: underline;
+	}
+	div.Extensions ul li span, div.Extensions ul li span * {
+	font-size: 14px;
+	font-weight: 400;
+	z-index: 1;
+	}
+	div.Extensions ul li span {
+	margin-left: 10px !important;
+	}
+	div.Extensions .Version {
+	font-weight: 700;
+	margin-left: 5px !important;
+	}
+	div.Extensions ul li p {
+	padding-left: 30px !important;
+	font-weight: 400;
+	}
+	div.Extensions ul li p a {
+	text-decoration: none;
+	}
+	div.Extensions ul li p a:hover {
+	text-decoration: underline;
+	}
+	/* Custom form for sortable list */
+	.SortList {
+	background-color: #FCE9F1;
+	border: 1px solid #FFF;
+	border-top: 0;
+	}
+	.MovableSortListItem {
+	cursor: move;
+	}
+	.SortListItem {
+	border-top: 1px solid #FFF;
+	padding: 6px !important;
+	margin: 0 !important;
+	position: relative;
+	font-size: 16px;
+	}
+	.SortListOptions {
+	float: none;
+	position: absolute;
+	right: 20px;
+	}
+	.SortEdit, .SortEdit:link, .SortEdit:active, .SortEdit:visited {
+	color: #FF0084 !important;
+	}
+	.SortEdit:hover {
+	text-decoration: underline;
+	}
+	.SortRemove {
+	background: url('btn.remove.gif') no-repeat center right;
+	}
+	.SortRemove, .SortNoRemove {
+	text-decoration: none;
+	margin-left: 10px !important;
+	padding-left: 15px !important;
+	}
+	#CustomInfo li {
+	width: 50%;
+	float: left;
+	}
+	#CustomInfo li input {
+	width: 80% !important;
+	}
+	.Submit {
+	margin: 20px 0 !important;
+	text-align: right;
+	}
+	.Submit input {
+	width: auto !important;
+	float: left;
+	cursor: pointer;
+	}
+	/* Profile Page */
+	#AccountProfile #Success, #AccountProfile .ErrorContainer {
+	margin-right: 18px;
+	}
+	#AccountProfile .ErrorContainer {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #FFC2CA;
+	}
+	#AccountProfile {
+	float: left;
+	width: 300px;
+	border-right: 1px solid #FFD6EC;
+	}
+	#AccountProfile li {
+	clear: both;
+	margin-right: 20px;
+	line-height: 18px;
+	}
+	#AccountProfile h3 {
+	font-size: 14px;
+	width: 50%;
+	float: left;
+	}
+	#AccountProfile p {
+	float: left;
+	width: 49%;
+	font-size: 14px;
+	}
+	#AccountProfile h2 {
+	font-size: 14px;
+	width: 60%;
+	float: left;
+	}
+	#AccountProfile .ProfileTitle * {
+	line-height: 32px;
+	}
+	#AccountProfile .Tagline {
+	padding: 6px;
+	text-align: center;
+	border-top: 1px solid #FFD6EC;
+	border-bottom: 1px solid #FFD6EC;
+	background: #FFF0F8;
+	margin: 0 20px 10px 0;
+	}
+	.ProfileTitleIcon {
+	background-repeat: no-repeat;
+	}
+	.ProfileTitle h2 {
+	width: 48% !important;
+	}
+	.ProfileTitle.WithIcon h2 {
+	padding-left: 4px !important;
+	width: auto;
+	}
+	.ProfileTitle.WithIcon .ProfileIcon {
+	padding: 9px 0 9px 30px;
+	background: transparent no-repeat center center;
+	margin-right: 6px;
+	display: inline;
+	float: left;
+	width: 32px;
+	}
+	#AccountProfile .ProfileTitle p {
+	width: auto;
+	float: right;
+	text-align: right;
+	font-size: 13px;
+	color: #AAA;
+	}
+	#AccountProfile .ProfileTitle {
+	line-height: 20px;
+	margin-bottom: 10px;
+	}
+	#AccountProfile .Picture {
+	width: 280px;
+	height: 200px;
+	overflow: hidden;
+	background: center center no-repeat;
+	margin-bottom: 6px;
+	}
+	#AccountHistory {
+	margin-left: 320px;
+	}
+	html>body #AccountHistory {
+	margin-left: 300px !important;
+	}
+	#AccountHistory ul, #AccountHistory h2 {
+	margin: 0 20px;
+	}
+	#AccountHistory ul {
+	margin-bottom: 20px;
+	}
+	#AccountHistory h2 {
+	font-size: 14px;
+	}
+	#AccountHistory ul {
+	border-top: 1px solid #F9D2E3;
+	}
+	#AccountHistory li {
+	padding: 5px;
+	border-bottom: 1px solid #F9D2E3;
+	}
+	#AccountHistory h3, #AccountHistory h3 a, #AccountHistory h3 small, #AccountHistory p {
+	font-size: 14px;
+	}
+	#AccountHistory p.Note {
+	padding: 3px;
+	padding-bottom: 0;
+	font-style: italic;
+	}
+	/* Settings Home */
+	#Form.Help form {
+	width: 98% !important;
+	margin: 0;
+	padding: 0 10px;
+	}
+	#SettingsPage #Form.Help p.Description {
+	padding: 10px !important;
+	}
+	#SettingsPage #Content dl * {
+	font-size: 12px;
+	}
+	#SettingsPage #Content dl dt {
+	margin: 10px;
+	font-size: 130%;
+	font-weight: 100;
+	color: #FF0084;
+	}
+	#SettingsPage #Content dl dd {
+	margin: 10px;
+	font-size: 110%;
+	}
+	.WhisperFrom, .WhisperTo {
+	margin-top: 30px!important;
+	background-color: #FFEBF6;
+	border: 1px solid #F9D2E3;
+	}
+	.WhisperFrom .CommentBody, .WhisperTo .CommentBody {
+	border: 0!important;
+	}
+	.left {
+	float: left;
+	}
+	.hiLite {
+	background: #FF9;
+	font-style: normal;
+	}
+	/* Autocomplete results */
+	.AutoCompleteContainer {
+	border: 1px solid #F9D2E3;
+	border-top: 0;
+	}
+	.AutoCompleteContainer td {
+	padding: 3px;
+	cursor: pointer;
+	}
+	.AutoCompleteRow td {
+	background: #FFEBF6;
+	}
+	.AutoCompleteHoverRow td {
+	background: #FFEBF6;
+	color: #333;
+	}
+	/* Ajax progress */
+	.HideProgress {
+	background: url('hprogress.gif') center center no-repeat;
+	text-decoration: none !important;
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+	.Progress {
+	background: url('hprogress.gif') left center no-repeat;
+	padding-left: 22px !important;
+	}
+	.PreferenceProgress {
+	background: url('hprogress.gif') left center no-repeat;
+	padding-left: 16px !important;
+	}
+	.Complete, .PreferenceComplete {
+	background: none;
+	padding-left: 0;
+	}
+	.PreferenceProgress input {
+	display: none;
+	}
+	.PreferenceComplete input {
+	display: inline;
+	}
+	/* Misc & Fixes */
+	.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+	.clearfix {
+	display: inline-table;
+	}
+	#Body, #Form h2, #Form p, * html .clearfix {
+	height: 1%;
+	}
+	.clearfix {
+	display: block;
+	}
+	body, #DiscussionsPage, #Panel *, h2, h3, form, label, input, span, ul, li, .PageInfo, .PageInfo p, .PageList, #Discussions, #Discussions *, #Discussions .Topics .TopicTitle, .Category, #Comments, .CommentHeader li, #CommentResults, #CommentResults *, #Form *, #SettingsPage #Content dl *, .AutoCompleteContainer, #Categories, .Category, #AccountProfile *, .ContentInfo *, #UserResults, #UserResults *, #AccountHistory *, #SearchPage {
+	margin: 0;
+	padding: 0;
+	}
+	ul, ol, #AccountProfile *, .PageList, #Discussions, #Discussions *, #Categories, #Form *, #CommentResults, #CommentResults *, #UserResults, #UserResults *, #AccountHistory * {
+	list-style: none;
+	}
+	img {
+	border: 0;
+	}
+	#Content #LeftContent .BottomClear {
+	height: 15px;
+	clear: both;
+	}
+	.ClearBoth {
+	clear: both;
+	height: 0;
+	}
+	#DebugBar {display: none;}

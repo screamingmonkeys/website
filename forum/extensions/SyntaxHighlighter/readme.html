@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>SyntaxHighlighter - ReadMe</title>
+	<link rel="stylesheet" type="text/css" href="styles/SyntaxHighlighter.css" />
+    <style type="text/css" media="screen">
+    body{background:#fff;margin:0;padding:0;text-align:center;}
+    body,div,p,blockquote,h1,h2,input{font-family:Trebuchet MS,Arial,Verdana;}
+    body,div,p,blockquote{font-size:13px;line-height:170%;}
+    a,a:link,a:visited{text-decoration:underline;color:#f60;}
+    a:hover{text-decoration:underline;color:#c30;}
+    h1{background:url(http://getvanilla.com/images/bannerfadeblue3.gif) repeat scroll left top;border-bottom:1px solid #ACBEDF;margin:0;padding:0;}
+    h1 span{color:#ACBEDF;display:block;width:500px;margin-left:auto;margin-right:auto;font-size:36px;padding:20px 0 20px 0;text-align:left;}
+    h1 span strong{padding-left:0px;color:#758ebc;}
+    .Container{background:url(fade.jpg) top left repeat-x;}
+    .Content{margin-left:auto;margin-right:auto;text-align:left;width:500px;padding:20px 0 0 0;}
+    h2{margin:0;padding:1em 0 0 0;}
+    h2.first{padding-top:0;}
+    code{background:#FEFECC;margin:10px 0 10px 0;padding:10px;border-left:4px solid #FCEEAA;color:#960;font-family:courier;font-size:12px;display:block;}
+    fieldset{border:0;margin:0;padding:0;}
+    fieldset ul{list-style:none;margin:0;padding:8px 8px 2px 8px;background:#efefef;}
+    fieldset label{float:left;margin:0 0 6px 0;width:30%;}
+    fieldset label.CheckBox{float:none;}
+    fieldset label.CheckBox input{width:auto !important;}
+    fieldset ul li{clear:left;}
+    fieldset ul li input{margin-bottom:6px;width:50%;}
+    .Button{padding:10px 0 20px 0;}
+    .Button input{font-size:14px;font-weight:bold;border:0;margin:0;padding:0;background:none;cursor:pointer;color:#64AE18;}
+    .Button a{font-size:14px;font-weight:bold;color:#64AE18;}
+    .Warnings{background:url(../themes/vanilla/styles/default/alert.gif) left top no-repeat #FFFECC;padding:8px;margin:10px 0 0 0;border-top:1px solid #FAEBB1;border-bottom:1px solid #FAEBB1;color:#D57D00;}
+    .Warnings,
+    .Warnings div{color:#D57D00;}
+    .Warnings strong{color:#c00;display:block;padding:0 0 4px 22px;}
+    .Warnings div a,
+    .Warnings div a:link,
+    .Warnings div a:visited{color:#B16800;}
+    .Warnings div a:hover{color:#c00;}
+    .Warnings div code{background:none;margin:10px 0 10px 0;padding:0;border:0;color:#960;font-family:courier;font-size:12px;display:block;}
+    p.footnote{font-size: 0.8em;}
+    </style>
+    <script type="text/javascript" src="scripts/shCore.js"></script>
+	<script type="text/javascript" src="scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="scripts/shBrushPhp.js"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+        dp.SyntaxHighlighter.ClipboardSwf = "scripts/clipboard.swf";
+        dp.SyntaxHighlighter.HighlightAll("code");
+    }
+    </script>
+</head>
+<body>
+    <h1><span><strong>SyntaxHighlighter 1.1.2</strong></span></h1>
+    <div class="Container">
+        <div class="Content">
+            <h2 class="first">About</h2>
+            <p>SyntaxHighlighter is a Formatter that displays code attractively with syntax highlighting in pre-formatted (monospace) blocks. Each code block is accompanied by "view plain", "copy to clipboard", and "print" links.</p>
+            
+            <h2>Requirements</h2>
+            <p>I've only tested this on Vanilla 1.1.4, but I believe that it will work with any version of Vanilla 1. I'll appreciate any user feedback regarding compatibility. This extension doesn't depend on any other extensions.</p>
+            
+            <h2>Installation</h2>
+            <p>Unpack the SyntaxHighlighter folder and move it to your forum's <strong>extensions</strong> directory. The <strong>default.php</strong> file should be at:</p>
+            
+            <code>/extensions/SyntaxHighlighter/default.php</code>
+            
+            <p>Then, while logged into your forum as an administrator, go to <strong>Settings > Extensions</strong>, check off the box to the left of "Syntax Highlighter" in the Extensions table.</p>
+            
+            <h2>Using SyntaxHighlighter</h2>
+            <p>When you want to highlight syntax in a post, select <strong>SyntaxHighlighter</strong> for <strong>Format comments as</strong> while posting a new discussion, reply, or other message.</p>
+            
+            <p>In the message or post itself, wrap any code in [code] blocks. For example, to highlight some CSS code:</p>
+
+<pre><code>[code lang="css"]
+p {
+    padding: 0;
+    font-family: arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+[/code]</code></pre>
+
+            <p>The following languages can be highlighted with their corresponding "lang" values:</p>
+            
+            <table style="border-collapse: collapse;" summary="Language codes">
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <strong>Language</strong>
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <strong>"lang" Value</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            C++
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>cpp</tt>, <tt>c</tt>, <tt>c++</tt>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            C#
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>c#</tt>, <tt>c-sharp</tt>, <tt>csharp</tt>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            CSS
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>css</tt>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            Delphi
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>delphi</tt>, <tt>pascal</tt>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            Java
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>java</tt>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            JavaScript
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>js</tt>, <tt>jscript</tt>, <tt>javascript</tt>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            PHP
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>php</tt>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            Python
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>py</tt>, <tt>python</tt>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            Ruby
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>rb</tt>, <tt>ruby</tt>, <tt>rails</tt>, <tt>ror</tt>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            Sql
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>sql</tt>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            VB
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>vb</tt>, <tt>vb.net</tt>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            XML/HTML
+                        </td>
+                        <td style="border: 1px solid rgb(170, 170, 170); padding: 5px;">
+                            <tt>xml</tt>, <tt>html</tt>, <tt>xhtml</tt>, <tt>xslt</tt>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>Other languages which aren't bundled with this extension can be added. To do so will require editing the extension files. See the <a href="http://code.google.com/p/syntaxhighlighter/w/list">SyntaxHighlighter Wiki</a> for direction.</p>
+            
+            <p>To load fewer languages (for faster page loads), comment out any languages in the $hlScripts array in this extension's default.php. For example, to disable Delphi support:</p>
+            
+<pre title="code" class="php">/**
+ * Load the language scripts. Comment out any languages you don't need.
+ */
+$hlScripts = array(
+    'shCore.js', // REQUIRED
+    'shBrushCpp.js', // C++
+    'shBrushCSharp.js', // C# (C-Sharp)
+    'shBrushCss.js', // CSS
+ // 'shBrushDelphi.js', // Delphi
+    'sBrushJava.js', // Java
+    'shBrushJScript.js', // JavaScript
+    'shBrushPhp.js', // PHP
+    'shBrushPython.js', // Python
+    'shBrushRuby.js', // Ruby
+    'shBrushSql.js', // SQL
+    'shBrushVb.js', // VB (Visual Basic)
+	'shBrushXml.js', // XML
+);</pre>
+
+            <p>Note the slashes, <strong>//</strong>, which comment out a line. If you comment the second line, 'shCore.js', SyntaxHighlighter won't work, so use care when making modifications like this.</p>
+            
+            <h2>Extending SyntaxHighlighter</h2>
+            <p>I don't recommend extending SyntaxHighlighter. It was written with a narrow goal, and as such doesn't have any facilities that StringFormatter lacks, other than the Parse() method that replaces [code] blocks.</p>
+            
+            <h2>Planned Features</h2>
+            <p>I'm working on these enhancements to SyntaxHighlighter:</p>
+            
+            <ul>
+                <li>BBCode integration</li>
+                <li>Admin settings for languagse and other behavior</li>
+                <li>"Save to file" option for each code block</li>
+                <li>User favorites for code blocks</li>
+            </ul>
+            
+            <p>And, possibly, down the road:</p>
+            
+            <ul>
+                <li>SyntaxHighlighter inegration with TinyMCE or another rich text editor for online coding.</li>
+            </ul>
+            
+            <h2>Author/Maintainer</h2>
+            <p>Contact me at <script type="text/javascript">document.write(
+"<n uers=\"znvygb:gznyyra\100703qrfvtaf\056pbz\">gznyyra\100703qrfvtaf\056pbz<\057n>".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+</script> if you have questions, feedback, or are interested in collaborating with this project.<sup>1</sup></p>
+
+            <p class="footnote"><sup>1</sup> Especially if you're working on a BBCode or Syntax Highlighter extension</p>
+
+            <hr>
+            
+            <p>Last changed September 6, 2008</p>
+        </div>
+    </div>
+</body>
+</html>
