@@ -1,6 +1,0 @@
-User-Agent: *
-Disallow: /email_template.htm
-Disallow: /placeholder.php
-Allow: /
-Disallow: /framework
-Disallow: /admin
