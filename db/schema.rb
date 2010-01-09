@@ -9,9 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100109003421) do
+ActiveRecord::Schema.define(:version => 20100109010735) do
 
   create_table "pages", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.string   "seo_keywords"
+    t.text     "seo_description"
+    t.boolean  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -2,10 +2,20 @@
 
 <table>
   <tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th>Seo keywords</th>
+    <th>Seo description</th>
+    <th>Published</th>
   </tr>
 
 <% @pages.each do |page| %>
   <tr>
+    <td><%=h page.title %></td>
+    <td><%=h page.content %></td>
+    <td><%=h page.seo_keywords %></td>
+    <td><%=h page.seo_description %></td>
+    <td><%=h page.published %></td>
     <td><%= link_to 'Show', page %></td>
     <td><%= link_to 'Edit', edit_page_path(page) %></td>
     <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>

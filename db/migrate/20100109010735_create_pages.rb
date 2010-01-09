@@ -1,6 +1,11 @@
 class CreatePages < ActiveRecord::Migration
   def self.up
     create_table :pages do |t|
+      t.string :title
+      t.text :content
+      t.string :seo_keywords
+      t.text :seo_description
+      t.boolean :published
 
       t.timestamps
     end
