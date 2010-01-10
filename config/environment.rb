@@ -22,6 +22,7 @@ Rails::Initializer.run do |config|
   config.gem 'typus', :source => 'http://gemmcutter.org'
   config.gem 'acts_as_list'
   config.gem 'acts_as_tree'
+  config.gem 'paperclip'
   config.gem 'kete-tiny_mce', :lib => 'tiny_mce', :source => 'http://gems.github.com'
 
   # Only load the plugins named here, in the order given (default is alphabetical).
