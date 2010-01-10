@@ -9,25 +9,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100109010735) do
+ActiveRecord::Schema.define(:version => 20100110192820) do
 
   create_table "pages", :force => true do |t|
+    t.string   "permalink"
     t.string   "title"
-    t.text     "content"
+    t.text     "body"
     t.string   "seo_keywords"
-    t.text     "seo_description"
-    t.boolean  "published"
+    t.string   "seo_description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "users", :force => true do |t|
-    t.string   "username"
-    t.string   "password"
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
-    t.boolean  "active"
+  create_table "typus_users", :force => true do |t|
+    t.string   "first_name",       :default => "",    :null => false
+    t.string   "last_name",        :default => "",    :null => false
+    t.string   "role",                                :null => false
+    t.string   "email",                               :null => false
+    t.boolean  "status",           :default => false
+    t.string   "token",                               :null => false
+    t.string   "salt",                                :null => false
+    t.string   "crypted_password",                    :null => false
+    t.string   "preferences"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
