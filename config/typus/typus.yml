@@ -5,7 +5,7 @@
 Page:
   fields:
     list: permalink, title
-    form: permalink, title, callout_text, body, seo_description, seo_keywords
+    form: permalink, title, body, seo_description, seo_keywords
     options:
       read_only: permalink
       tiny_mce:
