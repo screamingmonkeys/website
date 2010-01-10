@@ -1,0 +1,34 @@
+= 0.9.40 / 2009-11-??
+
+[X] Refactor all forms to be able to use formtastic.
+[X] Cleanup translation files.
+[X] Removed FIXME tests.
+[ ] Add has_many through relationships.
+[ ] Test default typus forms and remove old tests.
+[ ] Fixed and tested read-only fields.
+[ ] Fixed and tested auto-generated fields.
+[ ] Fixed and tested trees.
+[ ] Fix all fixme tests.
+[ ] Test _form.html.erb can be overwrited by model.
+[X] Pass attribute as symbol.
+[ ] Show auto_generated, read_only on string fields. (_string.html.erb)
+[ ] Pass options hash to form fields.
+[ ] Fix css to display correctly "select" fields in relationships.
+[X] Simplify configuration files.
+[X] Added '/' to admin_edit_typus_user_path because was not linking to 
+    the right path on the namespaced models.
+[X] Updated generator defaults.
+[X] Write CSV file to disk and then send_file.
+[X] Replaced CSV separator. Now uses ';' instead of ','.
+[X] Do not show selector on habtm if there are more than 500 records.
+[X] Paginate habtm relationships. Was implemented in the has_many.
+[X] Fixed unrelate action. Was not working properly when not using 
+    Rails default table names.
+[X] Do not humanize fields on the csv generator. We want to keep the 
+    real field name.
+[X] Recover password functionality now only needs the email to be defined.
+[X] Added json export format.
+[X] Added default route with conditions. (Ben Scofield)
+[ ] We should be able to set preferences and store them on the database.
+[ ] Make tests work again.
+[X] Fixed stylesheet and search to be able to use `relative_url_root`.
