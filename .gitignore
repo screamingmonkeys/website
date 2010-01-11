@@ -2,5 +2,3 @@
 database.yml
 tmp/
 log/*
-db/*.sqlite3*
-
