@@ -4,10 +4,7 @@
 
 admin:
   Page: create, read, update, delete
-  Image: create, read, update, delete
-  Slide: create, read, update, delete
   TypusUser: create, read, update, delete
 
 editor:
   Page: create, read, update
-  Image: create, read, update, delete

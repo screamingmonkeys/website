@@ -2,7 +2,7 @@
 
 # System wide options
 
-Typus::Configuration.options[:app_name] = 'smwg'
+Typus::Configuration.options[:app_name] = 'Screaming Monkeys Web Guild'
 # Typus::Configuration.options[:default_locale] = :en
 # Typus::Configuration.options[:email] = 'admin@example.com'
 # Typus::Configuration.options[:file_preview] = :typus_preview
