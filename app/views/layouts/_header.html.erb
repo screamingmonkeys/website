@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />  
   <meta name="distribution" content="global" />
   <meta name="revisit-after" content="20 days" />
   <meta name="robots" content="all,follow,index" />
@@ -10,13 +9,13 @@
   <meta name="owner" content="The Screaming Monkeys Web Guild" />
   <meta name="verify-v1" content="qxlqr4BDbtzi2Y22mHfgeci6UJTmvbxMO8aZLWjm16o=" />
   <meta name="copyright" content="&#169; <%= copyright_date %> Screaming Monkeys Web Guild www.screamingmonkeys.org" />
-  <meta name="keywords" content="fort wayne, indiana, web design, web development, guild, group, creative, design, social, organization, meetup, geekup, meet-up, geek-up, visual design, php, asp.net, ruby on rails, javascript, graphic design, geeks, get together, gathering, technology, college, students, fort, wayne, the fort, ft wayne, web professionals, dunkin, coldwater, coffee donuts, casual" />
-  <meta name="description" content="Screaming Monkeys Web Guild is group which holds re-occuring events in Fort Wayne, Indiana where like-minded web professionals (designers, developers, students, etc) can meet up to talk shop, share ideas, and make connections." />
+  <meta name="keywords" content="<%= yield :seo_keywords %>" />
+  <meta name="description" content="<%= yield :seo_description %>" />
   <meta name="abstract" content="The Screaming Monkeys Web Guild" />
-  <meta name="title" content="The Screaming Monkeys Web Guild" />
+  <meta name="title" content="<%= yield :title %> The Screaming Monkeys Web Guild" />
   
-  <title><%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'style', 'scaffold' %>
+  <title><%= yield :title %> The Screaming Monkeys Web Guild</title>
+  <%= stylesheet_link_tag 'style' %>
   
 <!-- !Google Analytics
 	<script type="text/javascript">
@@ -62,20 +61,15 @@
   <div id="content-container">
 		<div id="content-top"></div>  
 		<div id="content">
-			<ul id="socialplaces">
-				<li><a href="http://twitter.com/statuses/user_timeline/16232049.rss" target="_blank" class="fade">RSS</a></li>
-				<li><a href="http://www.twitter.com/screaminmonkeys" target="_blank" class="fade">TWITTER</a></li>
-				<li><a href="http://www.new.facebook.com/home.php#/group.php?gid=26687578301&amp;ref=ts" target="_blank" class="fade">FACEBOOK</a></li>
-				<li><a href="http://www.linkedin.com/groups?about=&amp;gid=904497&amp;trk=anet_ug_grppro" target="_blank" class="fade">LINKEDIN</a></li>
-				<li><a href="http://www.flickr.com/groups/screamingmonkeys/" target="_blank" class="fade">FLICKR</a></li>
-				<li><a href="http://www.youtube.com/user/screamingmonkeyswg" target="_blank" class="fade">YOUTUBE</a></li>
-			</ul>
+		  <%= render :partial => 'layouts/sidelinks' %>
 			
 			<div class="slider-wrap">
 			  <div class="stripNav" id="stripNav0">
 			    <ul>
-			      <li><a href="#" class="current">test</a></li>
-  			    <li><a href="#">test</a></li>
+			      <% @tabs.each do |@tab| %>
+  			    <li><a href="/<%= @tab.permalink %>" title="<%= @tab.title %>" <%= is_current_tab %>><%= @tab.title %></a></li>
+  			    
+  			    <% end %>
 			    </ul>
 			  </div>
 			  

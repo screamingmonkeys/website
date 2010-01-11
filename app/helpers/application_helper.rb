@@ -13,4 +13,12 @@ module ApplicationHelper
     #change underscores to spaces and capitalize words in string
     "#{a}".gsub(/_/, '-')
   end
+  
+  def is_current_tab
+    if @tab.permalink == @page.permalink 
+      'class="current"'
+    else
+      ''
+    end
+  end
 end
