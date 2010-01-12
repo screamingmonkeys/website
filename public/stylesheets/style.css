@@ -36,7 +36,7 @@ blockquote:before, blockquote:after {
 /* =================================================================================================== */
 html{background:#302110 url(../images/footer-bg.png) repeat;}
 body{
-	background: #302110 url(../images/bg.png) repeat;
+	background: #432400 url(../images/top-brown-gradient.png) 40px left repeat-x;;
 	margin:0 auto 0 auto;
 	width: 100%;
 	color: #FFE9CD;
@@ -76,27 +76,44 @@ body{
     width: 900px;
     height: auto;
     margin: 0 auto;
-    padding: 43px 0 0 0;
+    padding: 0;
   }
   
-    #header{position:relative; height:200px; margin:0; padding:0; background:#432400 url(../images/top-brown-gradient.png) top repeat-x; border-top:1px solid #5B3000;}
-      #logo-badge{position:absolute; top:-43px; left:0; z-index:100; border:none;}
-      #logo-text{position:relative; float:right; padding:15px 0 0 0; margin:0;}
     
-      #nav{position:absolute; top:-43px; right:0; list-style:none; float:right;}
-        #nav li{position:relative; float:left; padding:0; margin:0 0 0 20px;}
-          #nav li a:link, #nav li a:visited{line-height:20px; color:#FFE9CE; background:none; text-decoration:none;}
-          #nav li a:hover, #nav li a:active{line-height:20px; color:#FFE9CE; background:none; text-decoration:underline;}
+   #nav{position:relative; width:100%; background: #302110 url(../images/bg.png) repeat; text-align:center; border-bottom:1px solid #5B3000;}
+   #nav ul {position:relative; display:block; list-style:none; width:870px; height:20px; margin:0 auto;}
+      #nav li{position:relative; float:right; padding:0; margin:0 0 0 20px;}
+        #nav li a:link, #nav li a:visited{line-height:20px; color:#FFE9CE; background:none; text-decoration:none;}
+        #nav li a:hover, #nav li a:active{line-height:20px; color:#FFE9CE; background:none; text-decoration:underline;}
     
     
+    #header{position:relative; height:160px; margin:0; padding:0; background:transparent;}
+      #logo-badge{position:absolute; top:-44px; left:0; z-index:100; border:none;}
+      #logo-text{position:relative; float:right; padding:0; margin:0;}
     
-    #content{position:relative; text-align:left; margin:0; padding:40px 0; background:#432400; border-bottom:1px solid #5B3000;}
+    
+    #content{position:relative; text-align:left; margin:0; width:100%; padding:40px 0; border-bottom:1px solid #5B3000;}
       #slideshow{}
       
       #left-col{position:relative; width:590px; margin:0 100px 0 0; float:left;}
       #right-col{position:relative; width:240px; float:right;}
   
-    #footer{position:relative; background:transparent; clear:both; padding:0; margin:0;}
+  
+    #footer{position:relative; height:200px;	background: #302110 url(../images/bg.png) repeat; clear:both; padding:0; margin:0;}
+  
   
     #copyright{position:relative; top:33px; background:transparent; border-top:1px solid #8E7E6B; color:#8E7E6B; clear:both; padding:0; margin:0;}
       #copyright p{padding:0; margin:0; line-height:33px; font-size:11px;}
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      

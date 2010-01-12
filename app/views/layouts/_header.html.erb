@@ -51,15 +51,17 @@
 
 
 <body id="<%= bodytag_id %>">
+  <div id="nav">
+    <ul>
+			<% @tabs.each do |@tab| %>
+	      <li><a href="/<%= @tab.permalink %>" title="<%= @tab.title %>" <%= is_current_tab %>><%= @tab.title %></a></li>
+	    <% end %>
+    </ul>
+  </div>
   <div id="wrapper">
     <div id="header">
       <img src="images/badge.jpg" alt="The Screaming Monkeys Web Guild" id="logo-badge" />
       <img src="images/sm-guildtext-brown.png" alt="The Screaming Monkeys Web Guild" id="logo-text" />
-      <ul id="nav">
-  			<% @tabs.each do |@tab| %>
-		      <li><a href="/<%= @tab.permalink %>" title="<%= @tab.title %>" <%= is_current_tab %>><%= @tab.title %></a></li>
-		    <% end %>
-	    </ul>
 	  </div>
   	
   	<div id="content">
