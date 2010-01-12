@@ -1,164 +1,102 @@
-/* CSS RESET */
-html{color:#000;background:#FFF;}
-body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
-table{border-collapse:collapse;border-spacing:0;}
-fieldset,img{border:0;}
-address,caption,cite,dfn,th,var{font-style:normal;font-weight:normal;}
-caption,th{text-align:left;}
-h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
-q:before,q:after{content:'';}
-abbr,acronym {border:0;font-variant:normal;}
-sup {vertical-align:text-top;}
-sub {vertical-align:text-bottom;}
-input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
-input,textarea,select{font-size:100%;}
-legend{color:#000;}
-/*body{font:13px/1.231 helvetica,arial,clean,sans-serif;font-size:small;font:x-small;}
-table {font-size:inherit;font:100%;}*/
-body{font-family:Helvetica, arial, clean, sans-serif;}
-pre,code,kbd,samp,tt{font-family:monospace;font-size:108%;line-height:100%;}
-
-/* General Styling */
-html {background: url(/images/html-bg.jpg); color:#7F634F;}
-a{outline:0;}
-
-#copyright a:link, #copyright a:visited{color:#54331C; text-decoration:underline;}
-#copyright a:hover, #copyright a:active{color:#44230C; text-decoration:underline;}
-
-#content a:link, #content a:visited{color:#7F4D2C; text-decoration:none;}
-#content a:hover, #content a:active{color:#ffe9cf; text-decoration:none; border-bottom:2px solid #ffe9cf;}
-a img{border:0;}
-h1, h2{color:#9F826D; font-size:20px; padding:0; margin:10px 0 10px 0; clear:both;}
-h2{margin:30px 0 5px 0;}
-p, .wrapper li, label{color:#7b593d; font-size:14px; line-height:20px; padding:0; margin:5px 0 10px 0;}
-.floatright{position:relative; float:right; margin:0 0 10px 15px;}
-.floatleft{position:relative; float:left; margin:0 10px 0 15px;}
-.imgborder{border:10px solid #5F3F29;}
-.clear{clear:both;}
-.radio{width:25px; height:25px; border:none;}
-strong{color:#7F4D2C;}
-sup{position:relative; top:-6px; font-style:italic;}
-
-/* Positioning & Content Styling */
-#IE6_warning{
-	display: none;
-	background: #900;
-	color: #FFF;
-	padding: 10px;
-	position: relative;
-	top: 0;
-	left: 0;
-	height: 40px;
-	width: 100%;
+/*======================= CSS STYLE RESET ======================== */
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1;
+	text-align: left;
+	vertical-align: baseline;
 }
-#IE6_warning a{color:#FFF;}
-#container {width:825px; margin:0 auto; position:relative;}
+a img, :link img, :visited img {
+	border: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ol, ul {
+	list-style: none;
+}
+q:before, q:after,
+blockquote:before, blockquote:after {
+	content: "";
+}
 
-	#branding h1 a {display:block; height:82px; width:362px; background:url(/images/sm-guildtext.png) no-repeat; text-indent:-9000px; position:absolute; top:10px; right:80px;}
-	#branding h2 a {display:block; height:208px; width:201px; background:url(/images/sm-logo.png) no-repeat; text-indent:-9000px; position:absolute; top:20px; left:0px; z-index:2;}
-
-	#content-container {z-index:1; position:absolute; top:145px; left:60px;}
-	#content {background:url(/images/content-bg.png) repeat-y; position:relative; min-height:430px;}
-	#content-top {background:url(/images/content-top.png) no-repeat; height:15px; width:700px;}
-	#content-bottom {background:url(/images/content-bottom.png) no-repeat; height:37px; width:700px;}
-
-		#socialplaces {position:absolute; top:80px; left:30px; background:url(/images/connect.png) no-repeat; margin:0px; padding:50px 0 0 0; width:77px; z-index:100;}
-		#content #socialplaces li {list-style:none; text-align:center; padding:5px 0;}
-		#content #socialplaces li a {text-decoration:none; color:#7b593d; font-size:13px; display:block; height:24px; line-height:24px;}
-		#content #socialplaces li a:hover {color:#ffe9cf; border-bottom:none;}
-		
-		/*form styling*/
-		#message{width:100%; height:100px; overflow:auto;}
-		label{font-weight:bold; margin-right:10px;}
-		input, textarea{background:#7F5D47; color:#DAA588; font-size:12px; padding:6px; margin:3px; border:7px solid #5F3F29;}
-		input{width:270px;}
-		.submitbutton{position:relative; border:none; color:#7F634F; width:50px; height:30px; font-size:16px; cursor:pointer; font-weight:bold; float:right; background:none; left:37px;}
-		.submitbutton:hover{color:#FFE9CF;}
-
-			#copyright p {color:#54331C; margin:-15px 0 10px 0; font-size:11px; font-weight:bold;}
-
-			/* Coda Style Tab & Navigation Styling */
-			.stripViewer .panelContainer .panel ul {text-align:left;}
-		
-			.slider-wrap { /* This div isn't entirely necessary but good for getting the side arrows vertically centered */
-				position: relative;
-				width: 100%;
-				}
-
-			/* These 2 lines specify style applied while slider is loading */
-			.csw {position:relative; margin:auto; left:49px; width:490px; height:450px; background:#54331C; overflow:auto; padding:20px;}
-			.csw .loading {margin:180px 0 350px -20px; text-align:center; color:#54331C !important;} /*color blends with bg color turning it *invisible* */
-
-			.stripViewer { /* This is the viewing window */
-				position: relative;
-				overflow: hidden; 
-				margin: auto;
-				width: 550px;  /*Also specified in  .stripViewer .panelContainer .panel  below */
-				height: 450px;
-				left: 39px;
-				clear: both;
-				background: none;
-				}
-		
-			.stripViewer .panelContainer { /* This is the big long container used to house your end-to-end divs. Width is calculated and specified by the JS  */
-				position: relative;
-				left: 0; 
-				top: 0;
-				width: 100%;
-				list-style-type: none;
-				/* -moz-user-select: none; // This breaks CSS validation but stops accidental (and intentional - beware) panel highlighting in Firefox. Some people might find this useful, crazy fools. */
-				}
-		
-			.stripViewer .panelContainer .panel { /* Each panel is arranged end-to-end */
-				float:left;
-				height: 100%;
-				position: relative;
-				width: 530px; /* Also specified in  .stripViewer  above */
-				}
-		
-			.stripViewer .panelContainer .panel .wrapper { /* Wrapper to give some padding in the panels, without messing with existing panel width */
-				padding: 20px;
-				width: 510px;
-				}
-		
-			.stripNav { /* This is the div to hold your nav (the UL generated at run time) */
-				margin: auto;
-				position: absolute;
-				top: -60px;
-				left: 150px;
-				width: 550px !important;
-				}
-		
-			.stripNav ul { /* The auto-generated set of links */
-				list-style: none;
-				}
-		
-			.stripNav ul li {
-				float: left;
-				margin-right: 2px; /* If you change this, be sure to adjust the initial value of navWidth in slideviewer.js */
-				padding: 0 10px;
-				}
-		 	
-		 	/* The nav links */
-			.stripNav a {
-				text-transform: lowercase;
-				font-size: 16px;
-					font-weight: bold;
-				text-align: center;
-				line-height: 24px;
-				background: url(/images/nav-hover.png) no-repeat 0 -24px;
-				color: #333 !important;
-				text-decoration: none;
-				display: block;
-				height: 24px;
-				width: 74px;
-				}
-				.stripNav a:hover {color:#000 !important;	border-bottom:none !important;}
-				.stripNav a.current {background-position:0 100% !important; color:#000 !important;}
-			
-				 /* The left and right arrows */
-				.stripNavL, .stripNavR {position:absolute; top:190px; text-indent:-9000em;}
-				.stripNavL a, .stripNavR a {display:block; height:40px;	width:40px;}
-				.stripNavL a:hover, .stripNavR a:hover{border-bottom:none !important;}
-				.stripNavL {left:-60px; background: url("/images/left-arrow.png") no-repeat center;}		
-				.stripNavR {right: -40px; background: url("/images/right-arrow.png") no-repeat center;}
+/* =================================================================================================== */
+/* GENERAL SITE CSS */
+/* =================================================================================================== */
+html{background:#302110 url(../images/footer-bg.png) repeat;}
+body{
+	background: #302110 url(../images/bg.png) repeat;
+	margin:0 auto 0 auto;
+	width: 100%;
+	color: #FFE9CD;
+	font-size: 13px;
+	font-weight: normal;
+	font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+	text-align: center;
+	z-index: 1;
+	}
+	
+	/* base links */	
+	a:link, a:visited{position:relative; background:none; color:#FFE9CD; text-decoration:underline; padding:0; margin:0;}
+	a:hover, a:active{position:relative; background:#FFE9CD; color:#432400; text-decoration:none; padding:3px 6px; margin:-3px -6px; z-index:5;}
+	
+	/* text treatments */
+  h1{margin:30px 0 10px 0; font-size:32px; text-transform:lowercase; font-weight:normal; border-bottom:1px solid #5B3000; padding:0 0 4px 0;}
+  h2{margin:30px 0 10px 0; font-size:20px; text-transform:lowercase; font-weight:normal;}
+  h3{margin:35px 0 5px 0; font-size:16px; text-transform:capitalize; font-weight:bold;}
+  
+  p{margin:10px 0; padding:0; line-height:18px;}
+  
+  ul{list-style:none; padding:10px 0 10px 30px;}
+  li{list-style-position:inside; padding:5px 0;}
+	
+	/* =================================================================================================== */
+	/* GENERAL CLASSES */ 
+	/* =================================================================================================== */
+  .clear{position:relative; height:0; font-size:0; line-height:0; clear:both; padding:0; margin:0;}
+  .border{border:10px solid #2F1900;}
+  
+  /* =================================================================================================== */
+	/* LAYOUT STYLING */ 
+	/* =================================================================================================== */
+  #wrapper{
+    position: relative;
+    text-align: center;
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding: 43px 0 0 0;
+  }
+  
+    #header{position:relative; height:200px; margin:0; padding:0; background:#432400 url(../images/top-brown-gradient.png) top repeat-x; border-top:1px solid #5B3000;}
+      #logo-badge{position:absolute; top:-43px; left:0; z-index:100; border:none;}
+      #logo-text{position:relative; float:right; padding:15px 0 0 0; margin:0;}
+    
+      #nav{position:absolute; top:-43px; right:0; list-style:none; float:right;}
+        #nav li{position:relative; float:left; padding:0; margin:0 0 0 20px;}
+          #nav li a:link, #nav li a:visited{line-height:20px; color:#FFE9CE; background:none; text-decoration:none;}
+          #nav li a:hover, #nav li a:active{line-height:20px; color:#FFE9CE; background:none; text-decoration:underline;}
+    
+    
+    
+    #content{position:relative; text-align:left; margin:0; padding:40px 0; background:#432400; border-bottom:1px solid #5B3000;}
+      #slideshow{}
+      
+      #left-col{position:relative; width:590px; margin:0 100px 0 0; float:left;}
+      #right-col{position:relative; width:240px; float:right;}
+  
+    #footer{position:relative; background:transparent; clear:both; padding:0; margin:0;}
+  
+    #copyright{position:relative; top:33px; background:transparent; border-top:1px solid #8E7E6B; color:#8E7E6B; clear:both; padding:0; margin:0;}
+      #copyright p{padding:0; margin:0; line-height:33px; font-size:11px;}
