@@ -67,8 +67,7 @@
 			  <div class="stripNav" id="stripNav0">
 			    <ul>
 			      <% @tabs.each do |@tab| %>
-  			    <li><a href="/<%= @tab.permalink %>" title="<%= @tab.title %>" <%= is_current_tab %>><%= @tab.title %></a></li>
-  			    
+  			      <li><a href="/<%= @tab.permalink %>" title="<%= @tab.title %>" <%= is_current_tab %>><%= @tab.title %></a></li>
   			    <% end %>
 			    </ul>
 			  </div>
