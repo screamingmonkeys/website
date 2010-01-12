@@ -1,9 +1,0 @@
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|bmp|swf|js|css)$">
-Header set Expires "Thu, 15 Apr 2040 20:00:00 GMT"
-</FilesMatch>
-
-<IfModule mod_deflate.c>
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|bmp|swf|js|css)$">
-SetOutputFilter DEFLATE
-</FilesMatch>
-</IfModule>
