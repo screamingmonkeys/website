@@ -4,8 +4,8 @@
 
 Page:
   fields:
-    list: permalink, title
-    form: permalink, title, body, seo_description, seo_keywords
+    list: permalink, title, sort_by
+    form: permalink, title, body, seo_description, seo_keywords, sort_by
     options:
       tiny_mce:
         fields: body
@@ -22,7 +22,7 @@ Page:
             - 
           theme_advanced_buttons4:
             - 
-  order_by: permalink
+  order_by: sort_by
   application: Content
   
 TypusUser:
