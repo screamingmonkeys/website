@@ -1,9 +1,23 @@
 <%= render :partial => 'layouts/header' %>	
-	<div id="left-col">
-	  <%= yield %>
-	</div>
-	
-	<div id="right-col">
-	  
-	</div>
+	<div id="body">
+    <% unless @page.images == nil || @page.images == '' %>
+    
+	    <div id="left-col">
+	      <%= yield %>
+	    </div>
+  	  
+  	  <div id="right-col">
+    	  <ul>
+        <% @page.images.split(',').each do |img| %>
+            <li><img src="<%= img %>" alt="" class="border" /></li>
+        <% end %>
+    	  </ul>
+    	</div>
+    	
+    <% else %>
+
+  	  <%= yield %>
+    
+  	<% end %>
+  </div>
 <%= render :partial => 'layouts/footer' %>

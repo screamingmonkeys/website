@@ -5,7 +5,7 @@
 Page:
   fields:
     list: permalink, title, sort_by
-    form: permalink, title, body, seo_description, seo_keywords, sort_by
+    form: permalink, title, body, images, seo_description, seo_keywords, sort_by
     options:
       tiny_mce:
         fields: body

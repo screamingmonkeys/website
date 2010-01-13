@@ -72,20 +72,20 @@ body{
 	/* =================================================================================================== */
 	/* FORM STYLES */ 
 	/* =================================================================================================== */
-  form{position:relative; display:block; width:100%; padding:20px 0; margin:0;}
+  form{position:relative; display:block; width:560px; padding:20px 0; margin:0;}
     label{cursor:pointer; p}
     form p{clear:both; margin:5px 0; padding:5px 0;}
     form span{float:right; clear:both;}
     input[type="text"]{border:none; background:#5B3000; color:#FFE9CD; padding:8px 6px; font-size:12px;  font-family:"Lucida Console", "Courier New", Arial, sans-serif; width:300px; position:relative; top:-7px;}
     input[type="radio"]{margin-left:30px;}
     
-    input[type="submit"]{position:relative; float:right; cursor:pointer; background:#302110; color:#FFE9CD; border:none; padding:10px 15px; font-size:16px;}
+    input[type="submit"]{position:relative; float:right; cursor:pointer; background:#302110; color:#FFE9CD; border:none; margin:20px 0 0 0; padding:10px 15px; font-size:16px;}
   
   /* =================================================================================================== */
 	/* LAYOUT STYLING */ 
 	/* =================================================================================================== */
    #nav{position:relative; width:100%; background: #302110 url(../images/bg.png) repeat; text-align:center; border-bottom:1px solid #5B3000;}
-     #nav ul {position:relative; display:block; list-style:none; width:870px; height:20px; margin:0 auto; padding:11px 0;}
+     #nav ul {position:relative; display:block; list-style:none; width:870px; height:20px; margin:0 auto; padding:11px 0; right:-15px;}
         #nav li{position:relative; float:right; padding:0; margin:0 0 0 30px;}
           #nav li a:link, #nav li a:visited
   			  {line-height:20px; color:#FFE9CE; background:none; margin:0; padding:0 0 1px 0; text-decoration:none}
@@ -103,9 +103,10 @@ body{
     #content{position:relative; text-align:left; margin:0; width:100%; padding:40px 0;}
       #slideshow{}
       
-      #left-col{position:relative; width:590px; margin:0 100px 0 0; float:left;}
-      #right-col{position:relative; width:240px; float:right;}
-  
+      #left-col{position:relative; width:560px; margin:0; float:left;}
+      #right-col{position:relative; width:260px; float:right; padding:65px 0 0 0;}
+        #right-col ul{list-style:none; padding:0; margin:0;}
+        #right-col ul li{padding:0 0 30px 0;}
   
   #footer-wrapper{position:relative; background:#302110 url(../images/bg.png) repeat; clear:both; padding:30px 0; margin:0; border-top:1px solid #5B3000;}
     #footer{position:relative; width:900px; margin:0 auto; font-family:"Lucida Console", "Courier New", Arial, sans-serif;}
