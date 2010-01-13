@@ -7,4 +7,8 @@ module ApplicationHelper
   def is_current_tab
     @tab.permalink == @page.permalink ? 'class="current"' : ''
   end
+  
+  def page_images
+    @sources = @images.split(',')
+  end
 end
