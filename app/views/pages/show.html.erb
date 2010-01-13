@@ -1,6 +1,6 @@
 <% if @page %>
 
-  <% content_for :title, @page.title + ' - ' %>
+  <% content_for :title, @page.title + ' - ' unless @page.title == 'Home' %>
   <% content_for :seo_keywords, @page.seo_keywords %>
   <% content_for :seo_description, @page.seo_description %>
 	  <%= @page.body %>

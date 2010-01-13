@@ -36,11 +36,11 @@ blockquote:before, blockquote:after {
 /* =================================================================================================== */
 html{background:#302110 url(../images/footer-bg.png) repeat;}
 body{
-	background: #432400 url(../images/top-brown-gradient.png) 40px left repeat-x;;
+	background: #432400 url(../images/top-brown-gradient.png) 43px left repeat-x;;
 	margin:0 auto 0 auto;
 	width: 100%;
 	color: #FFE9CD;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: normal;
 	font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
 	text-align: center;
@@ -56,54 +56,67 @@ body{
   h2{margin:30px 0 10px 0; font-size:20px; text-transform:lowercase; font-weight:normal;}
   h3{margin:35px 0 5px 0; font-size:16px; text-transform:capitalize; font-weight:bold;}
   
-  p{margin:10px 0; padding:0; line-height:18px;}
+  p{margin:25px 0; padding:0; line-height:20px;}
+  strong{text-transform:uppercase;}
   
-  ul{list-style:none; padding:10px 0 10px 30px;}
+  ul{list-style:none; padding:5px 0 5px 40px;}
   li{list-style-position:inside; padding:5px 0;}
 	
 	/* =================================================================================================== */
 	/* GENERAL CLASSES */ 
 	/* =================================================================================================== */
   .clear{position:relative; height:0; font-size:0; line-height:0; clear:both; padding:0; margin:0;}
+  .required{color:#E00; font-size:18px; padding:0 2px;}
   .border{border:10px solid #2F1900;}
+	
+	/* =================================================================================================== */
+	/* FORM STYLES */ 
+	/* =================================================================================================== */
+  form{position:relative; display:block; width:100%; padding:20px 0; margin:0;}
+    label{cursor:pointer; p}
+    form p{clear:both; margin:5px 0; padding:5px 0;}
+    form span{float:right; clear:both;}
+    input[type="text"]{border:none; background:#5B3000; color:#FFE9CD; padding:8px 6px; font-size:12px;  font-family:"Lucida Console", "Courier New", Arial, sans-serif; width:300px; position:relative; top:-7px;}
+    input[type="radio"]{margin-left:30px;}
+    
+    input[type="submit"]{position:relative; float:right; cursor:pointer; background:#302110; color:#FFE9CD; border:none; padding:10px 15px; font-size:16px;}
   
   /* =================================================================================================== */
 	/* LAYOUT STYLING */ 
 	/* =================================================================================================== */
-  #wrapper{
-    position: relative;
-    text-align: center;
-    width: 900px;
-    height: auto;
-    margin: 0 auto;
-    padding: 0;
-  }
-  
-    
    #nav{position:relative; width:100%; background: #302110 url(../images/bg.png) repeat; text-align:center; border-bottom:1px solid #5B3000;}
-   #nav ul {position:relative; display:block; list-style:none; width:870px; height:20px; margin:0 auto;}
-      #nav li{position:relative; float:right; padding:0; margin:0 0 0 20px;}
-        #nav li a:link, #nav li a:visited{line-height:20px; color:#FFE9CE; background:none; text-decoration:none;}
-        #nav li a:hover, #nav li a:active{line-height:20px; color:#FFE9CE; background:none; text-decoration:underline;}
-    
-    
+     #nav ul {position:relative; display:block; list-style:none; width:870px; height:20px; margin:0 auto; padding:11px 0;}
+        #nav li{position:relative; float:right; padding:0; margin:0 0 0 30px;}
+          #nav li a:link, #nav li a:visited
+  			  {line-height:20px; color:#FFE9CE; background:none; margin:0; padding:0 0 1px 0; text-decoration:none}
+  		  #nav li a:hover, #nav li a:active
+  			  {line-height:20px; color:#FFE9CE; background:none; margin:0; padding:0 0 1px 0; text-decoration:none;}
+      	#nav li a.current{border-bottom:2px solid #5B3000;}
+   
+   
+  #content-wrapper{position:relative; text-align:center; width:900px; height:auto; margin:0 auto; padding:0;} 
     #header{position:relative; height:160px; margin:0; padding:0; background:transparent;}
       #logo-badge{position:absolute; top:-44px; left:0; z-index:100; border:none;}
-      #logo-text{position:relative; float:right; padding:0; margin:0;}
+      #logo-text{position:relative; float:right; padding:15px 0 0 0; margin:0;}
     
     
-    #content{position:relative; text-align:left; margin:0; width:100%; padding:40px 0; border-bottom:1px solid #5B3000;}
+    #content{position:relative; text-align:left; margin:0; width:100%; padding:40px 0;}
       #slideshow{}
       
       #left-col{position:relative; width:590px; margin:0 100px 0 0; float:left;}
       #right-col{position:relative; width:240px; float:right;}
   
   
-    #footer{position:relative; height:200px;	background: #302110 url(../images/bg.png) repeat; clear:both; padding:0; margin:0;}
+  #footer-wrapper{position:relative; background:#302110 url(../images/bg.png) repeat; clear:both; padding:30px 0; margin:0; border-top:1px solid #5B3000;}
+    #footer{position:relative; width:900px; margin:0 auto; font-family:"Lucida Console", "Courier New", Arial, sans-serif;}
+      #footer h2{margin:0 0 25px 0;}
+      #footer p{margin:0; padding:0;}
+      
+      #footer a:link, #footer a:visited{border-bottom:2px solid #5B3000; text-decoration:none; padding:0 2px; margin:2px;}
+      #footer a:hover, #footer a:active{border-bottom:4px solid #5B3000; text-decoration:none; padding:2px; margin:0 2px;}
   
-  
-    #copyright{position:relative; top:33px; background:transparent; border-top:1px solid #8E7E6B; color:#8E7E6B; clear:both; padding:0; margin:0;}
-      #copyright p{padding:0; margin:0; line-height:33px; font-size:11px;}
+  #copyright-wrapper{position:relative; background:#302110 url(../images/footer-bg.png) repeat; border-top:1px solid #4E3E2B; color:#6E5E5B; clear:both;}
+      #copyright{position:relative; width:900px; padding:0; margin:0 auto; line-height:33px; font-size:11px;}
       
       
       
