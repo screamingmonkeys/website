@@ -97,7 +97,7 @@ body{
   #content-wrapper{position:relative; text-align:center; width:900px; height:auto; margin:0 auto; padding:0;} 
     #header{position:relative; height:160px; margin:0; padding:0; background:transparent;}
       #logo-badge{position:absolute; top:-44px; left:0; z-index:100; border:none;}
-      #logo-text{position:relative; float:right; padding:15px 0 0 0; margin:0;}
+      #logo-text{position:relative; float:right; padding:0; margin:0;}
     
     
     #content{position:relative; text-align:left; margin:0; width:100%; padding:40px 0;}
