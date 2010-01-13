@@ -7,8 +7,8 @@ class PagesController < ApplicationController
     @page   = Page.find_by_permalink( params[:permalink] )
     @tabs   = Page.all
     @images = @page.images
-    
-    @rss = ''
+    @rss    = ''
+   
     if @page.title == 'Schedule'
       feed_url = 'http://api.meetup.com/events.rss/?zip=46815&group_urlname=screamingmonkeys&key=555f7b666820756c1a382f13a6b2b7e'
 #     feed_url = 'http://www.meetup.com/screamingmonkeys/calendar/rss/'

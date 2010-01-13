@@ -1,16 +1,6 @@
-<% if @page %>
+<% content_for :title, @page.title + ' - ' unless @page.title == 'Home' %>
+<% content_for :seo_keywords, @page.seo_keywords %>
+<% content_for :seo_description, @page.seo_description %>
+  <%= @page.body %>
 
-  <% content_for :title, @page.title + ' - ' unless @page.title == 'Home' %>
-  <% content_for :seo_keywords, @page.seo_keywords %>
-  <% content_for :seo_description, @page.seo_description %>
-	  <%= @page.body %>
-
-    <%= @rss unless nil? %>
-
-<% else %>
-			
-		<h1># Error 404</h1>
-		<p>The page you were looking for doesn't exist.</p>
-	  <p>You may have mistyped the address or the page may have moved.</p>
-	  
-<% end %>
+  <%= @rss unless nil? %>
