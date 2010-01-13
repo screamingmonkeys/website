@@ -1,0 +1,70 @@
+--- 
+pages_001: 
+  permalink: ""
+  created_at: 2010-01-11 13:49:15
+  title: Home
+  body: |-
+    <h1># welcome</h1>
+    <p>The Screaming Monkeys Web Guild was created by two Fort Wayne, Indiana web professionals, <a href="http://www.focusminded.com/" target="_blank">James Mitchell</a> and <a href="http://www.timnovinger.com" target="_blank">Tim Novinger</a>. We hold regular events where like-minded web professionals can meet up to...</p>
+    <ul>
+    <li>=&gt; &nbsp; &nbsp;Talk shop</li>
+    <li>=&gt; &nbsp; &nbsp;Discover new technologies </li>
+    <li>=&gt; &nbsp; &nbsp;Share ideas</li>
+    <li>=&gt; &nbsp; &nbsp;Make connections with peers</li>
+    <li>=&gt; &nbsp; &nbsp;Learn, learn, learn...</li>
+    </ul>
+    <p>...all in a fun, exciting and creative atmosphere.</p>
+    <p>As web geeks working in Fort Wayne we noticed a significant amount of local talent, yet a serious lack of organization amongst them. While some amazing groups already exist, they tend to be focused primarily on the creative and print side of the business, and have (in general) nothing to do with the web.</p>
+    <p>We intend to fill this gap.</p>
+    <p>Our goal is to create a focused group that not only enhances existing working relationships and knowledge by hosting presentations and group talks, but one that bridges the gap between our industry and local education by involving current students.</p>
+    <p>Right now, our city is focused on graduate retention and economic growth. What better way to help than by getting students involved in their local industry before they graduate, and to help local professionals network and continue to learn?</p>
+  seo_keywords: fort wayne, indiana, web design, web development, guild, group, creative, design, social, organization, meetup, geekup, meet-up, geek-up, visual design, php, asp.net, ruby on rails, javascript, graphic design, geeks, get together, gathering, technology, college, students, fort, wayne, the fort, ft wayne, web professionals, dunkin, coldwater, coffee donuts, casual
+  updated_at: 2010-01-13 18:15:42
+  sort_by: "3"
+  id: "1"
+  seo_description: Screaming Monkeys Web Guild is group which holds re-occuring events in Fort Wayne, Indiana where like-minded web professionals (designers, developers, students, etc) can meet up to talk shop, share ideas, and make connections.
+  images: |-
+    http://farm3.static.flickr.com/2602/3672081587_f6dfe777ff_m.jpg,
+    http://farm3.static.flickr.com/2758/4111940055_a2d318b1ea_m.jpg,
+    http://farm4.static.flickr.com/3510/4029387038_6463f761eb_m.jpg
+pages_002: 
+  permalink: email-list-signup
+  created_at: 2010-01-11 13:58:04
+  title: Subscribe
+  body: |-
+    <h1># e-mail list signup</h1>
+    <p>Fill out this form with your information and we'll send you cool stuff!</p>
+    <p>Well not really, but you <strong>will</strong> be added to our email mailing list which I'm told is quite amazing.</p>
+    <form action="http://screamingmonkeys.list-manage.com/subscribe/post" method="post"> <input name="u" type="hidden" value="786b0a330f13692db0e3df83e" /> <input name="id" type="hidden" value="ff4fc1d842" />
+    <p><label>Email Address<strong class="required">*</strong></label><span><input name="MERGE0" type="text" tabindex="1" /></span></p>
+    <p><label>First Name<strong class="required">*</strong></label><span><input name="MERGE1" type="text" tabindex="2" /></span></p>
+    <p><label>Last Name</label><span><input name="MERGE2" type="text" tabindex="3" /></span></p>
+    <p><label>Twitter Screenname</label><span><input name="MERGE3" type="text" tabindex="4" /></span></p>
+    <p><label>Preferred Format</label><span><input id="input_radio_html" class="radio" checked="checked" name="EMAILTYPE" type="radio" value="html" tabindex="5" /> <label for="input_radio_html">HTML</label><input id="input_radio_text" class="radio" name="EMAILTYPE" type="radio" value="text" tabindex="6" /> <label for="input_radio_html">Plain Text</label></span></p>
+    <p><input type="submit" value="Subscribe" tabindex="7" /></p>
+    </form>
+  seo_keywords: mail chimp, list, email, subscribe, feed
+  updated_at: 2010-01-13 18:17:15
+  sort_by: "1"
+  id: "3"
+  seo_description: Sign up to the Screaming Monkeys mailing list to stay in touch with us and learn about our latest events!
+  images: |-
+    http://farm4.static.flickr.com/3013/3687669561_97e6b6af7a_m.jpg,
+    http://farm3.static.flickr.com/2767/4111941871_49f745a942_m.jpg
+pages_003: 
+  permalink: schedule
+  created_at: 2010-01-11 14:52:37
+  title: Schedule
+  body: |-
+    <h1># where</h1>
+    <p><a href="http://niic.net/data/EGCFloorplan.jpg" target="_blank">Cole Foundation Conference &amp; Training Center</a><br /><em class="note"> (directly next to the NIIC &amp; across from IPFW off of Stellhorn Road)</em></p>
+    <p><a href="http://niic.net/data/EGCFloorplan.jpg" target="_blank"></a>3201 Stellhorn Road<br />Fort Wayne, IN 46815</p>
+  seo_keywords: schedule, event, events, next, meet up, meeting, group
+  updated_at: 2010-01-13 18:18:15
+  sort_by: "2"
+  id: "4"
+  seo_description: View the schedule of the Screaming Monkeys Web Guild and find out when the next meet up is.
+  images: |-
+    http://farm5.static.flickr.com/4032/4271401031_de25583263_m.jpg,
+    http://farm3.static.flickr.com/2622/3687669479_c0e131b8ea_m.jpg,
+    http://farm3.static.flickr.com/2648/4112707572_ca4bb87497_m.jpg

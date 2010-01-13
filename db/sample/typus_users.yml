@@ -1,0 +1,55 @@
+--- 
+typus_users_001: 
+  salt: 7baf2e4a2adde0448a9a056a6979b461ffe0b426
+  created_at: 2010-01-11 13:45:41
+  crypted_password: de73bda9a7a7cf19fc639e7dde1c8f50ab72e13d
+  token: c9dd0f925b61
+  updated_at: 2010-01-11 13:46:27
+  role: admin
+  preferences: |
+    --- 
+    :locale: !str 
+      str: en
+      "@_rails_html_safe": false
+
+  id: "1"
+  last_name: Novinger
+  status: t
+  first_name: Tim
+  email: tim.novinger@gmail.com
+typus_users_002: 
+  salt: ecbc3cbd7adc281f6ed6a09969bdc998e801fc9d
+  created_at: 2010-01-13 04:17:44
+  crypted_password: 9054455440505d1995b07eb8ad24899dd5ad41b9
+  token: c3389dbfc7e5
+  updated_at: 2010-01-13 04:17:44
+  role: admin
+  preferences: |
+    --- 
+    :locale: !str 
+      str: en
+      "@_rails_html_safe": false
+
+  id: "2"
+  last_name: Mitchell
+  status: f
+  first_name: James
+  email: jpmitchell@focusminded.com
+typus_users_003: 
+  salt: d04ef8213e03cae257c5450201219271d8d5b32d
+  created_at: 2010-01-13 04:18:42
+  crypted_password: 2f6724e5e3dcf4bba69b4a89509cd35fe05214b2
+  token: 2483caf7aeca
+  updated_at: 2010-01-13 04:18:42
+  role: admin
+  preferences: |
+    --- 
+    :locale: !str 
+      str: en
+      "@_rails_html_safe": false
+
+  id: "3"
+  last_name: Harvey
+  status: f
+  first_name: Tim
+  email: tim@literacy5.com
