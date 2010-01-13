@@ -36,7 +36,7 @@ blockquote:before, blockquote:after {
 /* =================================================================================================== */
 html{background:#302110 url(../images/footer-bg.png) repeat;}
 body{
-	background: #432400 url(../images/top-brown-gradient.png) 43px left repeat-x;;
+	background: #432400 url(../images/top-brown-gradient.png) 43px left repeat-x;
 	margin:0 auto 0 auto;
 	width: 100%;
 	color: #FFE9CD;
@@ -74,7 +74,7 @@ body{
 	/* FORM STYLES */ 
 	/* =================================================================================================== */
   form{position:relative; display:block; width:560px; padding:20px 0; margin:0;}
-    label{cursor:pointer; p}
+    label{cursor:pointer;}
     form p{clear:both; margin:5px 0; padding:5px 0;}
     form span{float:right; clear:both;}
     input[type="text"]{border:none; background:#5B3000; color:#FFE9CD; padding:8px 6px; font-size:12px;  font-family:"Lucida Console", "Courier New", Arial, sans-serif; width:300px; position:relative; top:-7px;}

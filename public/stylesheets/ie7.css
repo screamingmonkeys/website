@@ -1,4 +1,2 @@
-.imgborder{border:10px solid #5F3F29; margin:10px 0;}
-.stripViewer{width:530px !important; left:0px;}
-#message{width:450px; height:130px; overflow:auto;}
-.submitbutton{left:-5px; top:-5px;}
+.note{line-height:25px;}
+input[type="text"]{top:-25px;}

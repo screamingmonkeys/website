@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />  
   <meta name="distribution" content="global" />
   <meta name="revisit-after" content="20 days" />
@@ -16,6 +17,9 @@
   
   <title><%= yield :title %> The Screaming Monkeys Web Guild - Fort Wayne, Indiana</title>
   <%= stylesheet_link_tag 'style' %>
+  
+	<!--[if IE 7]><%= stylesheet_link_tag 'ie7' %><![endif]-->  
+	<!--[if IE 6]><%= stylesheet_link_tag 'ie6' %><![endif]-->
   
 <!-- !Google Analytics
 	<script type="text/javascript">
@@ -50,7 +54,7 @@
 
 
 
-<body id="<%= bodytag_id %>">
+<body>
   <div id="nav">
     <ul>
 			<% @tabs.each do |@tab| %>
