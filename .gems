@@ -3,3 +3,4 @@ acts_as_list
 acts_as_tree
 paperclip
 kete-tiny_mce --source http://gems.github.com
+htmlentities --source http://gems.github.com
