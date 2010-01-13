@@ -5,6 +5,8 @@
   <% content_for :seo_description, @page.seo_description %>
 	  <%= @page.body %>
 
+    <%= @rss unless nil? %>
+
 <% else %>
 			
 		<h1># Error 404</h1>
