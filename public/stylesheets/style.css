@@ -116,8 +116,12 @@ body{
       #footer a:hover, #footer a:active{border-bottom:4px solid #5B3000; text-decoration:none; padding:2px; margin:0 2px;}
   
   #copyright-wrapper{position:relative; background:#302110 url(../images/footer-bg.png) repeat; border-top:1px solid #4E3E2B; color:#6E5E5B; clear:both;}
-      #copyright{position:relative; width:900px; padding:0; margin:0 auto; line-height:33px; font-size:11px;}
+      #copyright{position:relative; width:900px; padding:0; margin:0 auto;}
+        #copyright p{line-height:0; font-size:11px; margin:20px 0;}
+        #copyright span{float:right; margin-top:-7px;}
       
+        #copyright a:link, #copyright a:visited{border-bottom:2px solid #5B3000; text-decoration:none; padding:1px 0; margin:2px;}
+        #copyright a:hover, #copyright a:active{border-bottom:4px solid #5B3000; text-decoration:none; padding:2px; margin:1px 0;}
       
       
       
