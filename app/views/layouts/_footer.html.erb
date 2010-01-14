@@ -19,5 +19,14 @@
   		  <p>&#169; Copyright <%= Time.now.year %> The Screaming Monkeys Web Guild. All rights reserved. <span>Hosted by <a href="http://www.heroku.com/">Heroku</a>.</span></p>
   		</div>
   	</div>
+  	
+  	<!-- !Load Javascripts -->
+  	<%= javascript_include_tag 'mootools-1.2.4-core-yc.js', 'Loop.js', 'SlideShow.js' %>
+
+  	<script type="text/javascript">
+  		window.addEvent('domready', function() {
+  		  mySlideShow = new SlideShow('slideshow').play();
+    	});
+    </script>
 </body>
 </html>

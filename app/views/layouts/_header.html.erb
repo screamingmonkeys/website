@@ -16,12 +16,12 @@
   <meta name="title" content="<%= yield :title %> The Screaming Monkeys Web Guild - Fort Wayne, Indiana" />
   
   <title><%= yield :title %> The Screaming Monkeys Web Guild - Fort Wayne, Indiana</title>
+
   <%= stylesheet_link_tag 'style' %>
-  
 	<!--[if IE 7]><%= stylesheet_link_tag 'ie7' %><![endif]-->  
 	<!--[if IE 6]><%= stylesheet_link_tag 'ie6' %><![endif]-->
   
-<!-- !Google Analytics -->
+  <!-- !Google Analytics -->
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-5311875-1']);
@@ -34,30 +34,13 @@
 	  })();
 	</script>
 </head>
-
-
-
-  <!--
-  Hi curious person that is viewing source of my site.  Now that you are here, I know 
-  that you are an uber-nerd. Now I can talk about Star Wars and use my lame Han Solo
-  voice...see I'm doing it right now.  Ok, so you are a nerd and you like the codes...
-  the html codes to be exact.  Well, you are in a semi-decent area to learn.
-
-  Feel free to learn from, analyze, and/or use the techniques used in this site.  I'm
-  just a regular dude that learned css/xhtml/js the same exact way you are doing now.
-  However, please don't steal my codes line for line, it's bad Joo Joo and the Universe
-  will probably end up kicking your ass. And by Universe I of course am referring to
-  Chuck Norris.
-  -->
-
-
-
-
 <body>
   <div id="nav">
     <ul>
 			<% @tabs.each do |@tab| %>
-	      <li><a href="/<%= @tab.permalink %>" title="<%= @tab.title %>" <%= is_current_tab %>><%= @tab.title %></a></li>
+			  <% unless @tab.permalink == '404' %>
+	        <li><a href="/<%= @tab.permalink %>" title="<%= @tab.title %>" <%= is_current_tab %>><%= @tab.title %></a></li>
+	      <% end %>
 	    <% end %>
     </ul>
   </div>
@@ -68,6 +51,6 @@
 	  </div>
   	
   	<div id="content">
-  	  <div id="slideshow">
-  	     <%= render :partial => "layouts/banners" %>
+  	  <div id="slideshow" class="border">
+  	     <%= render :partial => "layouts/slides" %>
   	  </div>

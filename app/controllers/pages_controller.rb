@@ -8,7 +8,7 @@ class PagesController < ApplicationController
     @page   = Page.find_by_permalink( params[:permalink] )
     
     if @page.nil?
-      render :file => "#{RAILS_ROOT}/public/404.html", :layout => false, :status => 404
+      @page = Page.find_by_permalink( '404' )
     else
     
       @images = @page.images
