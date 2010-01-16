@@ -21,12 +21,6 @@
   	</div>
   	
   	<!-- !Load Javascripts -->
-  	<%= javascript_include_tag 'mootools-1.2.4-core-yc.js', 'Loop.js', 'SlideShow.js' %>
-
-  	<script type="text/javascript">
-  		window.addEvent('domready', function() {
-  		  mySlideShow = new SlideShow('slideshow').play();
-    	});
-    </script>
+  	<%= javascript_include_tag 'jquery-1.2.6.min', 'slideshow' %>
 </body>
 </html>
