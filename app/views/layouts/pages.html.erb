@@ -1,17 +1,14 @@
 <%= render :partial => 'layouts/header' %>	
 	<div id="body">
-    <% unless @page.images == nil || @page.images == '' %>
+    <% unless @page.images == nil? || @page.images.empty? %>
     
 	    <div id="left-col">
 	      <%= yield %>
+        <%= rss_feed %>
 	    </div>
   	  
   	  <div id="right-col">
-    	  <ul>
-        <% @page.images.split(',').each do |img| %>
-            <li><img src="<%= img %>" alt="" class="border" /></li>
-        <% end %>
-    	  </ul>
+  	    <%= page_images %>
     	</div>
     	
     <% else %>
