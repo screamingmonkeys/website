@@ -37,13 +37,7 @@
 </head>
 <body>
   <div id="nav">
-    <ul>
-			<% @tabs.each do |@tab| %>
-			  <% unless @tab.permalink == '404' %>
-	        <li><a href="/<%= @tab.permalink %>" title="<%= @tab.title %>" <%= is_current_tab %>><%= @tab.title %></a></li>
-	      <% end %>
-	    <% end %>
-    </ul>
+    <%= page_nav %>
   </div>
   <div id="content-wrapper">
     <div id="header">
