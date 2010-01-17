@@ -1,158 +1,388 @@
-/*======================= CSS STYLE RESET ======================== */
-html, body, div, span,
-applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dd, dl, dt, li, ol, ul,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	line-height: 1;
-	text-align: left;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1;
+  text-align: left;
+  vertical-align: baseline;
 }
-a img, :link img, :visited img {
-	border: 0;
-}
+a img { border: 0; }
+:link img { border: 0; }
+:visited img { border: 0; }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-ol, ul {
-	list-style: none;
+ol, ul { list-style: none; }
+q:before { content: ""; }
+q:after { content: ""; }
+blockquote:before { content: ""; }
+blockquote:after { content: ""; }
+html { background: #302110 url(../images/footer-bg.png) repeat; }
+body {
+  background: #432400 url(../images/top-brown-gradient.png) 43px 0px repeat-x;
+  margin: 0 auto;
+  width: 100%;
+  color: #ffe9cd;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+  text-align: center;
+  z-index: 1;
 }
-q:before, q:after,
-blockquote:before, blockquote:after {
-	content: "";
+a:link {
+  position: relative;
+  background: none;
+  color: #ffe9cd;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
 }
-
-/* =================================================================================================== */
-/* GENERAL SITE CSS */
-/* =================================================================================================== */
-html{background:#302110 url(../images/footer-bg.png) repeat;}
-body{
-	background: #432400 url(../images/top-brown-gradient.png) 43px left repeat-x;
-	margin:0 auto 0 auto;
-	width: 100%;
-	color: #FFE9CD;
-	font-size: 14px;
-	font-weight: normal;
-	font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
-	text-align: center;
-	z-index: 1;
-	}
-	
-	/* base links */	
-	a:link, a:visited{position:relative; background:none; color:#FFE9CD; text-decoration:underline; padding:0; margin:0;}
-	a:hover, a:active{position:relative; background:#FFE9CD; color:#432400; text-decoration:none; padding:3px 6px; margin:-3px -6px; z-index:5;}
-	
-	/* text treatments */
-  h1{margin:30px 0 10px 0; font-size:32px; text-transform:lowercase; font-weight:normal; border-bottom:1px solid #5B3000; padding:0 0 4px 0;}
-  h2{margin:50px 0 10px 0; font-size:20px; text-transform:lowercase; font-weight:normal;}
-  h3{margin:35px 0 5px 0; font-size:16px; text-transform:capitalize; font-weight:bold;}
-  
-  p{margin:20px 0; padding:0; line-height:20px;}
-  strong{text-transform:uppercase;}
-  
-  ul{list-style:none; padding:5px 0 5px 40px;}
-  li{list-style-position:outside; padding:5px 0;}
-	
-	
-	/* =================================================================================================== */
-	/* GENERAL CLASSES */ 
-	/* =================================================================================================== */
-  .clear{position:relative; height:0; font-size:0; line-height:0; clear:both; padding:0; margin:0;}
-  .required{color:#E00; font-size:18px; padding:0 2px;}
-  .border{border:10px solid #2F1900;}
-  .note{font-size:11px; color:#0F0900;}
-	
-	
-	/* =================================================================================================== */
-	/* FORM STYLES */ 
-	/* =================================================================================================== */
-  form{position:relative; display:block; width:560px; padding:20px 0; margin:0;}
-    label{cursor:pointer;}
-    form p{clear:both; margin:5px 0; padding:5px 0;}
-    form span{float:right; clear:both;}
-    input[type="text"]{border:none; background:#5B3000; color:#FFE9CD; padding:8px 6px; font-size:12px;  font-family:"Lucida Console", "Courier New", Arial, sans-serif; width:300px; position:relative; top:-7px;}
-    input[type="radio"]{margin-left:30px;}
-    input[type="submit"]{position:relative; float:right; cursor:pointer; background:#302110; color:#FFE9CD; border:none; margin:20px 0 0 0; padding:10px 15px; font-size:16px;}
-  
-  
-  /* =================================================================================================== */
-	/* LAYOUT STYLING */ 
-	/* =================================================================================================== */
-      /* NAVIGATION */
-    	/* =================================================================================================== */
-      #nav{position:relative; width:100%; background: #302110 url(../images/bg.png) repeat; text-align:center; border-bottom:1px solid #5B3000;}
-        #nav ul {position:relative; display:block; list-style:none; width:870px; height:20px; margin:0 auto; padding:11px 0; right:-15px;}
-          #nav li{position:relative; float:right; padding:0; margin:0 0 0 30px;}
-            #nav li a:link, #nav li a:visited
-        	  {line-height:20px; color:#FFE9CE; background:none; margin:0; padding:0 0 1px 0; text-decoration:none}
-          #nav li a:hover, #nav li a:active
-        	  {line-height:20px; color:#FFE9CE; background:none; margin:0; padding:0 0 1px 0; text-decoration:none;}
-        	#nav li a.current{border-bottom:2px solid #5B3000;}
-   
-   
-      /* =================================================================================================== */
-      /* CONTENT */ 
-      /* =================================================================================================== */
-      #content-wrapper{position:relative; text-align:center; width:900px; height:auto; margin:0 auto; padding:0;} 
-        #header{position:relative; height:160px; margin:0; padding:0; background:transparent;}
-          #logo-badge{position:absolute; top:-44px; left:0; z-index:100; border:none;}
-          #logo-text{position:relative; float:right; padding:0; margin:0;}
-    
-    
-        #content{position:relative; text-align:left; margin:0; width:100%; padding:40px 0;}
-    
-          #slideshow{position:relative; width:880px; height:262px; overflow:hidden; background:#302110;}
-            #slideshow img {
-                position:absolute;
-                top:0;
-                left:0;
-                z-index:8;
-                opacity:0.0;
-            }
-              #slideshow img.active{z-index:10; opacity:1.0;}
-              #slideshow img.last-active{z-index:9;}
-
-      
-          #left-col{position:relative; width:560px; margin:0; float:left;}
-            #rss .photo {display:none;}
-            #rss{line-height:20px;}
-            #rss h2{text-transform:capitalize;}
-            #rss ul{list-style:square; margin:-15px 0;}
-            #rss li{font-family:"Lucida Console", "Courier New", Arial, sans-serif; padding:10px 0;}
-      
-          #right-col{position:relative; width:260px; float:right; padding:65px 0 0 0;}
-            #right-col ul{list-style:none; padding:0; margin:0;}
-            #right-col ul li{padding:0 0 30px 0;}
-
-        
-      /* =================================================================================================== */      
-      /* FIRST FOOTER */
-      /* =================================================================================================== */
-      #footer-wrapper{position:relative; background:#302110 url(../images/bg.png) repeat; clear:both; padding:30px 0; margin:0; border-top:1px solid #5B3000;}
-        #footer{position:relative; width:900px; margin:0 auto; font-family:"Lucida Console", "Courier New", Arial, sans-serif;}
-          #footer h2{margin:0 0 25px 0;}
-          #footer p{margin:0; padding:0;}
-      
-          #footer a:link, #footer a:visited{border-bottom:2px solid #5B3000; text-decoration:none; padding:0 2px; margin:2px;}
-          #footer a:hover, #footer a:active{border-bottom:4px solid #5B3000; text-decoration:none; padding:2px; margin:0 2px;}
-
-
-      /* =================================================================================================== */  
-      /* SECOND FOOTER */
-      /* =================================================================================================== */
-      #copyright-wrapper{position:relative; background:#302110 url(../images/footer-bg.png) repeat; border-top:1px solid #4E3E2B; color:#6E5E5B; clear:both;}
-          #copyright{position:relative; width:900px; padding:0; margin:0 auto;}
-            #copyright p{line-height:0; font-size:11px; margin:20px 0;}
-            #copyright span{float:right; margin-top:-7px;}
-      
-            #copyright a:link, #copyright a:visited{border-bottom:2px solid #5B3000; text-decoration:none; padding:1px 0; margin:2px;}
-            #copyright a:hover, #copyright a:active{border-bottom:4px solid #5B3000; text-decoration:none; padding:2px; margin:1px 0;}
+a:visited {
+  position: relative;
+  background: none;
+  color: #ffe9cd;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+}
+a:hover {
+  position: relative;
+  background: #ffe9cd;
+  color: #302110;
+  text-decoration: none;
+  padding: 3px 6px;
+  margin: -3px -6px;
+  z-index: 5;
+}
+a:active {
+  position: relative;
+  background: #ffe9cd;
+  color: #302110;
+  text-decoration: none;
+  padding: 3px 6px;
+  margin: -3px -6px;
+  z-index: 5;
+}
+h1 {
+  margin: 30px 0 10px 0;
+  font-size: 32px;
+  text-transform: lowercase;
+  font-weight: normal;
+  border-bottom: 1px solid #5b3000;
+  padding: 0 0 4px 0;
+}
+h2 {
+  margin: 50px 0 10px 0;
+  font-size: 20px;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+h3 {
+  margin: 35px 0 5px 0;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+p {
+  margin: 20px 0;
+  padding: 0;
+  line-height: 20px;
+}
+strong { text-transform: uppercase; }
+ul {
+  list-style: none;
+  padding: 5px 0 5px 40px;
+}
+li {
+  list-style-position: outside;
+  padding: 5px 0;
+}
+.clear {
+  position: relative;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+.required {
+  color: #ee0000;
+  font-size: 18px;
+  padding: 0 2px;
+}
+.border { border: 10px solid #2f1900; }
+.note {
+  font-size: 11px;
+  color: #0f0900;
+}
+form {
+  position: relative;
+  display: block;
+  width: 560px;
+  padding: 20px 0;
+  margin: 0;
+}
+label { cursor: pointer; }
+form p {
+  clear: both;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+form span {
+  float: right;
+  clear: both;
+}
+input[type="text"] {
+  position: relative;
+  border: none;
+  background: #5b3000;
+  color: #ffe9cd;
+  padding: 8px 6px;
+  font-size: 12px;
+  font-family: "Lucida Console", "Courier New", Arial, sans-serif;
+  width: 300px;
+  top: -7px;
+}
+input[type="radio"] { margin-left: 30px; }
+input[type="submit"] {
+  position: relative;
+  float: right;
+  cursor: pointer;
+  background: #302110;
+  color: #ffe9cd;
+  border: none;
+  margin: 20px 0 0 0;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+#nav {
+  position: relative;
+  width: 100%;
+  background: #302110 url(../images/bg.png) repeat;
+  text-align: center;
+  border-bottom: 1px solid #5b3000;
+}
+#nav ul {
+  position: relative;
+  display: block;
+  list-style: none;
+  width: 870px;
+  height: 20px;
+  margin: 0 auto;
+  padding: 11px 0;
+  right: -15px;
+}
+#nav li {
+  position: relative;
+  float: right;
+  padding: 0;
+  margin: 0 0 0 30px;
+}
+#nav li a:link {
+  line-height: 20px;
+  color: #ffe9cd;
+  background: none;
+  margin: 0;
+  padding: 0 0 1px 0;
+  text-decoration: none;
+}
+#nav li a:visited {
+  line-height: 20px;
+  color: #ffe9cd;
+  background: none;
+  margin: 0;
+  padding: 0 0 1px 0;
+  text-decoration: none;
+}
+#nav li a:hover {
+  line-height: 20px;
+  color: #ffe9cd;
+  background: none;
+  margin: 0;
+  padding: 0 0 1px 0;
+  text-decoration: none;
+}
+#nav li a:active {
+  line-height: 20px;
+  color: #ffe9cd;
+  background: none;
+  margin: 0;
+  padding: 0 0 1px 0;
+  text-decoration: none;
+}
+#nav li a.current { border-bottom: 2px solid #5b3000; }
+#content-wrapper {
+  position: relative;
+  text-align: center;
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+#header {
+  position: relative;
+  height: 160px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+#logo-badge {
+  position: absolute;
+  top: -44px;
+  left: 0;
+  z-index: 100;
+  border: none;
+}
+#logo-text {
+  position: relative;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+#content {
+  position: relative;
+  text-align: left;
+  margin: 0;
+  width: 100%;
+  padding: 40px 0;
+}
+#slideshow {
+  position: relative;
+  width: 880px;
+  height: 262px;
+  overflow: hidden;
+  background: #302110;
+}
+#slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  opacity: 0;
+}
+#slideshow img.active {
+  z-index: 10;
+  opacity: 1;
+}
+#slideshow img.last-active { z-index: 9; }
+#left-col {
+  position: relative;
+  width: 560px;
+  margin: 0;
+  float: left;
+}
+#rss { line-height: 20px; }
+#rss .photo { display: none; }
+#rss h2 { text-transform: capitalize; }
+#rss ul {
+  list-style: square;
+  margin: -15px 0;
+}
+#rss li {
+  font-family: "Lucida Console", "Courier New", Arial, sans-serif;
+  padding: 10px 0;
+}
+#right-col {
+  position: relative;
+  width: 260px;
+  float: right;
+  padding: 65px 0 0 0;
+}
+#right-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#right-col ul li { padding: 0 0 30px 0; }
+#footer-wrapper {
+  position: relative;
+  background: #302110 url(../images/bg.png) repeat;
+  clear: both;
+  padding: 30px 0;
+  margin: 0;
+  border-top: 1px solid #5b3000;
+}
+#footer {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  font-family: "Lucida Console", "Courier New", Arial, sans-serif;
+}
+#footer h2 { margin: 0 0 25px 0; }
+#footer p {
+  margin: 0;
+  padding: 0;
+}
+#footer a:link {
+  border-bottom: 2px solid #5b3000;
+  text-decoration: none;
+  padding: 0 2px;
+  margin: 2px;
+}
+#footer a:visited {
+  border-bottom: 2px solid #5b3000;
+  text-decoration: none;
+  padding: 0 2px;
+  margin: 2px;
+}
+#footer a:hover {
+  border-bottom: 4px solid #5b3000;
+  text-decoration: none;
+  padding: 2px;
+  margin: 0 2px;
+}
+#footer a:active {
+  border-bottom: 4px solid #5b3000;
+  text-decoration: none;
+  padding: 2px;
+  margin: 0 2px;
+}
+#copyright-wrapper {
+  position: relative;
+  background: #302110 url(../images/footer-bg.png) repeat;
+  border-top: 1px solid #4e3e2b;
+  color: #6e5e5b;
+  clear: both;
+}
+#copyright {
+  position: relative;
+  width: 900px;
+  padding: 0;
+  margin: 0 auto;
+}
+#copyright p {
+  line-height: 0;
+  font-size: 11px;
+  margin: 20px 0;
+}
+#copyright span {
+  float: right;
+  margin-top: -7px;
+}
+#copyright a:link {
+  border-bottom: 2px solid #5b3000;
+  text-decoration: none;
+  padding: 1px 0;
+  margin: 2px;
+}
+#copyright a:visited {
+  border-bottom: 2px solid #5b3000;
+  text-decoration: none;
+  padding: 1px 0;
+  margin: 2px;
+}
+#copyright a:hover {
+  border-bottom: 4px solid #5b3000;
+  text-decoration: none;
+  padding: 2px;
+  margin: 1px 0;
+}
+#copyright a:active {
+  border-bottom: 4px solid #5b3000;
+  text-decoration: none;
+  padding: 2px;
+  margin: 1px 0;
+}

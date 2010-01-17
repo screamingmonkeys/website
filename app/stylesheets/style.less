@@ -1,0 +1,182 @@
+/* =================================================================================================== */
+/* LESS VARIABLES */
+/* =================================================================================================== */
+@width:         900px;
+
+@fonts:         "Lucida Grande", "Helvetica", "Arial", sans-serif;
+@code_font:     "Lucida Console", "Courier New", Arial, sans-serif;
+
+@alert_red:     #EE0000;
+
+@light_text:    #FFE9CD;
+@mid_text:      #6E5E5B;
+@dark_text:     #0F0900;
+
+@light_brown:   #4E3E2B;
+@bg_brown:      #432400;
+@mid_brown:     #5B3000;
+@dark_brown:    #302110;
+@darker_brown:  #2F1900;
+
+  /* LESS MIXINS */
+  .rounded_corners (@radius:5px)
+  {
+    -moz-border-radius:     @radius;
+    -webkit-border-radius:  @radius;
+    border-radius:          @radius;
+  }
+
+
+/* =================================================================================================== */
+/* CSS RESET */
+/* =================================================================================================== */
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img {
+	border: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ol, ul {
+	list-style: none;
+}
+q:before, q:after,
+blockquote:before, blockquote:after {
+	content: "";
+}
+
+/* =================================================================================================== */
+/* GENERAL SITE CSS */
+/* =================================================================================================== */
+html{background:@dark_brown url(../images/footer-bg.png) repeat;}
+body{
+	background: @bg_brown url(../images/top-brown-gradient.png) 43px 0px repeat-x;
+	margin: 0 auto;
+	width: 100%;
+	color: @light_text;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: @fonts;
+	text-align: center;
+	z-index: 1;
+	}
+	
+	/* base links */	
+	a:link, a:visited{position:relative; background:none; color:@light_text; text-decoration:underline; padding:0; margin:0;}
+	a:hover, a:active{position:relative; background:@light_text; color:@dark_brown; text-decoration:none; padding:3px 6px; margin:-3px -6px; z-index:5;}
+	
+	/* text treatments */
+  h1{margin:30px 0 10px 0; font-size:32px; text-transform:lowercase; font-weight:normal; border-bottom:1px solid @mid_brown; padding:0 0 4px 0;}
+  h2{margin:50px 0 10px 0; font-size:20px; text-transform:lowercase; font-weight:normal;}
+  h3{margin:35px 0 5px 0; font-size:16px; text-transform:capitalize; font-weight:bold;}
+  
+  p{margin:20px 0; padding:0; line-height:20px;}
+  strong{text-transform:uppercase;}
+  
+  ul{list-style:none; padding:5px 0 5px 40px;}
+  li{list-style-position:outside; padding:5px 0;}
+	
+	
+	/* =================================================================================================== */
+	/* GENERAL CLASSES */ 
+	/* =================================================================================================== */
+  .clear{position:relative; height:0; font-size:0; line-height:0; clear:both; padding:0; margin:0;}
+  .required{color:@alert_red; font-size:18px; padding:0 2px;}
+  .border{border:10px solid @darker_brown;}
+  .note{font-size:11px; color:@dark_text;}
+	
+	
+	/* =================================================================================================== */
+	/* FORM STYLES */ 
+	/* =================================================================================================== */
+  form{position:relative; display:block; width:560px; padding:20px 0; margin:0;}
+    label{cursor:pointer;}
+    form p{clear:both; margin:5px 0; padding:5px 0;}
+    form span{float:right; clear:both;}
+    input[type="text"]{position:relative; border:none; background:@mid_brown; color:@light_text; padding:8px 6px; font-size:12px;  font-family:@code_font; width:300px; top:-7px;}
+    input[type="radio"]{margin-left:30px;}
+    input[type="submit"]{position:relative; float:right; cursor:pointer; background:@dark_brown; color:@light_text; border:none; margin:20px 0 0 0; padding:10px 15px; font-size:16px;}
+  
+  
+  /* =================================================================================================== */
+	/* LAYOUT STYLING */ 
+	/* =================================================================================================== */
+      /* NAVIGATION */
+    	/* =================================================================================================== */
+      #nav{position:relative; width:100%; background:@dark_brown url(../images/bg.png) repeat; text-align:center; border-bottom:1px solid @mid_brown;}
+        #nav ul {position:relative; display:block; list-style:none; width:870px; height:20px; margin:0 auto; padding:11px 0; right:-15px;}
+          #nav li{position:relative; float:right; padding:0; margin:0 0 0 30px;}
+            #nav li a:link, #nav li a:visited
+        	  {line-height:20px; color:@light_text; background:none; margin:0; padding:0 0 1px 0; text-decoration:none}
+          #nav li a:hover, #nav li a:active
+        	  {line-height:20px; color:@light_text; background:none; margin:0; padding:0 0 1px 0; text-decoration:none;}
+        	#nav li a.current{border-bottom:2px solid @mid_brown;}
+   
+   
+      /* =================================================================================================== */
+      /* CONTENT */ 
+      /* =================================================================================================== */
+      #content-wrapper{position:relative; text-align:center; width:@width; height:auto; margin:0 auto; padding:0;} 
+        #header{position:relative; height:160px; margin:0; padding:0; background:transparent;}
+          #logo-badge{position:absolute; top:-44px; left:0; z-index:100; border:none;}
+          #logo-text{position:relative; float:right; padding:0; margin:0;}
+    
+    
+        #content{position:relative; text-align:left; margin:0; width:100%; padding:40px 0;}
+    
+          #slideshow{position:relative; width:880px; height:262px; overflow:hidden; background:@dark_brown;}
+            #slideshow img {position:absolute; top:0; left:0; z-index:8; opacity:0;}
+              #slideshow img.active{z-index:10; opacity:1;}
+              #slideshow img.last-active{z-index:9;}
+      
+          #left-col{position:relative; width:560px; margin:0; float:left;}
+            #rss{line-height:20px;}
+              #rss .photo{display:none;}
+              #rss h2{text-transform:capitalize;}
+              #rss ul{list-style:square; margin:-15px 0;}
+              #rss li{font-family:@code_font; padding:10px 0;}
+      
+          #right-col{position:relative; width:260px; float:right; padding:65px 0 0 0;}
+            #right-col ul{list-style:none; padding:0; margin:0;}
+            #right-col ul li{padding:0 0 30px 0;}
+
+        
+      /* =================================================================================================== */      
+      /* FIRST FOOTER */
+      /* =================================================================================================== */
+      #footer-wrapper{position:relative; background:@dark_brown url(../images/bg.png) repeat; clear:both; padding:30px 0; margin:0; border-top:1px solid @mid_brown;}
+        #footer{position:relative; width:@width; margin:0 auto; font-family:@code_font;}
+          #footer h2{margin:0 0 25px 0;}
+          #footer p{margin:0; padding:0;}
+      
+          #footer a:link, #footer a:visited{border-bottom:2px solid @mid_brown; text-decoration:none; padding:0 2px; margin:2px;}
+          #footer a:hover, #footer a:active{border-bottom:4px solid @mid_brown; text-decoration:none; padding:2px; margin:0 2px;}
+
+
+      /* =================================================================================================== */  
+      /* SECOND FOOTER */
+      /* =================================================================================================== */
+      #copyright-wrapper{position:relative; background:@dark_brown url(../images/footer-bg.png) repeat; border-top:1px solid @light_brown; color:@mid_text; clear:both;}
+          #copyright{position:relative; width:@width; padding:0; margin:0 auto;}
+            #copyright p{line-height:0; font-size:11px; margin:20px 0;}
+            #copyright span{float:right; margin-top:-7px;}
+      
+            #copyright a:link, #copyright a:visited{border-bottom:2px solid @mid_brown; text-decoration:none; padding:1px 0; margin:2px;}
+            #copyright a:hover, #copyright a:active{border-bottom:4px solid @mid_brown; text-decoration:none; padding:2px; margin:1px 0;}   
