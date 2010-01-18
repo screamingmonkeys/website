@@ -28,4 +28,7 @@ config.action_view.cache_template_loading            = true
 # config.threadsafe!
 
 # LESS CSS Compilier Options
-# Less::Plugin.options[:update] = :never
+# (http://github.com/karsthammer/less-rails)
+config.after_initialize do
+  Less::Plugin.options[:update] = :never
+end
