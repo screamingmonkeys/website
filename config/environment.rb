@@ -49,7 +49,7 @@ Rails::Initializer.run do |config|
   end
   
   # Tell assets to pull from separate namespace
-  # ActionController::Base.asset_host = "http://assets.screamingmonkeys.org"
+  ActionController::Base.asset_host = "http://assets.screamingmonkeys.org"
   
   # Configuration options for LESS CSS (http://github.com/karsthammer/less-rails)
   Less::Plugin.options[:template_location] = "#{RAILS_ROOT}/app/stylesheets"
