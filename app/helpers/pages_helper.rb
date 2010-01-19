@@ -17,9 +17,13 @@ module PagesHelper
     "<ul>#{html}</ul>"
   end
   
-  def rss_feed
-     html = ''
+  def rss_feed 
+     # Default text
+     html = "<h2>## Event Details</h2> 
+           <p>Sorry, but we do not have any events scheduled at this time.</p>
+           <p>Please check back later.</p>"
 
+     # Pull RSS feed and parse
      if @page.permalink == "schedule"
        coder    = HTMLEntities.new
        feed_url = "http://api.meetup.com/events.rss/?zip=46815&group_urlname=screamingmonkeys&key=555f7b666820756c1a382f13a6b2b7e"
@@ -31,8 +35,9 @@ module PagesHelper
            description = coder.decode(item.description)
            html += "<h2>## #{item.title}</h2> <p>#{description}</p> <p>=> <a href='#{item.link}'>view on meetup.com</a></p>"
          end
-       end
+       end 
+           
        "<div id='rss'>#{html}</div>"
-      end
+     end
    end
 end
