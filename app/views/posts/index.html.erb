@@ -1,0 +1,10 @@
+<%= render :partial => 'layouts/header' %>	
+	<div id="body">
+  	  <% @posts.each do |p| %>
+  	    <div class="post">
+    	    <h2># <a href="/notes/<%= p.slug %>" title="<%=h p.title %>"><%=h p.title %></a></h2>
+    	    <%= p.content %>
+    	  </div>
+  	  <% end %>
+  </div>
+<%= render :partial => 'layouts/footer' %>

@@ -1,7 +1,3 @@
 class Post < ActiveRecord::Base
-  validates_presence_of :title
-  
-  def typus_name
-    title
-  end
+  default_scope :order => 'sort_by created_at DESC'
 end

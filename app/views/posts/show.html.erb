@@ -1,1 +1,21 @@
-<%= @post.body %>
+<% content_for :title, @post.title + ' - ' %>
+<% content_for :seo_keywords, @post.seo_keywords %>
+<% content_for :seo_description, @post.seo_description %>
+
+
+<%= render :partial => 'layouts/header' %>	
+	<div id="body">
+	  <div id="left-col">
+      <h1># <%=h @post.title %></h1>
+      <%= @post.content %>
+    </div>
+    
+  	<div id="right-col">
+	    <ul id="post-list">
+      	  <% @posts.each do |p| %>
+        	    <li><a href="/notes/<%= p.slug %>" title="<%=h p.title %>"><%=h p.title %></a></li>
+      	  <% end %>
+  	  </ul>
+  	</div>
+  </div>
+<%= render :partial => 'layouts/footer' %>

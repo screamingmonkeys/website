@@ -4,11 +4,11 @@
 
 Page:
   fields:
-    list: permalink, title, sort_by
-    form: permalink, title, body, images, seo_description, seo_keywords, sort_by
+    list: title, permalink, sort_by
+    form: permalink, title, content, images, seo_description, seo_keywords, sort_by
     options:
       tiny_mce:
-        fields: body
+        fields: content
         options:
           theme: advanced
           theme_advanced_toolbar_location: top
@@ -27,8 +27,8 @@ Page:
   
 Post:
   fields:
-    list: title
-    form: title, content
+    list: title, slug, updated_at
+    form: title, slug, content, seo_description, seo_keywords
     options:
       tiny_mce:
         fields: content

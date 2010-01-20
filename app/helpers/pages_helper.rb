@@ -1,13 +1,4 @@
 module PagesHelper
-  def page_nav
-    html = ''
-    @tabs.each do |@tab|
-      unless @tab.permalink == '404'
-	      html += "<li><a href='/#{@tab.permalink}' #{is_current_tab}>#{@tab.title}</a></li>"
-	    end
-	  end
-    "<ul>#{html}</ul>"
-  end
   
   def page_images
     html = ''
@@ -40,4 +31,5 @@ module PagesHelper
        "<div id='rss'>#{html}</div>"
      end
    end
+   
 end

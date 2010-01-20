@@ -9,12 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100120022254) do
+ActiveRecord::Schema.define(:version => 20100120223603) do
 
   create_table "pages", :force => true do |t|
     t.string   "permalink"
     t.string   "title"
-    t.text     "body"
+    t.text     "content"
     t.text     "seo_keywords",    :limit => 255
     t.text     "seo_description", :limit => 255
     t.datetime "created_at"
@@ -28,6 +28,9 @@ ActiveRecord::Schema.define(:version => 20100120022254) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "slug"
+    t.text     "seo_keywords"
+    t.text     "seo_description"
   end
 
   create_table "typus_users", :force => true do |t|

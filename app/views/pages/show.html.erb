@@ -2,4 +2,24 @@
 <% content_for :seo_keywords, @page.seo_keywords %>
 <% content_for :seo_description, @page.seo_description %>
 
-<%= @page.body %>
+<%= render :partial => 'layouts/header' %>	
+	<div id="body">
+    <% unless @page.images == nil? || @page.images.empty? %>
+    
+	    <div id="left-col">
+	      <%= @page.content %>
+        <%= rss_feed %>
+	    </div>
+  	  
+  	  <div id="right-col">
+  	    <%= page_images %>
+    	</div>
+    	
+    <% else %>
+    
+	    <% if @page.title == "Error 404" %> <h1># <%= @page.title %></h1>  <% end %>
+  	  <%= @page.content %>
+    
+  	<% end %>
+  </div>
+<%= render :partial => 'layouts/footer' %>

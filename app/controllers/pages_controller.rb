@@ -4,13 +4,13 @@ class PagesController < ApplicationController
   require 'htmlentities'
 
   def show
-    @tabs   = Page.all
-    @page   = Page.find_by_permalink( params[:permalink] )
+    @page          = Page.find_by_permalink( params[:permalink] )
     
-    unless @page.nil?
-      @images = @page.images
-    else  
-      @page = Page.find_by_permalink("404")
+    if @page.nil?
+      @page        = Page.find_by_permalink("404")
+    else
+      @images      = @page.images
+      @current_tab = @page.permalink  
     end
   end   
 end
