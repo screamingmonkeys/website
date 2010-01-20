@@ -4,7 +4,9 @@
 
 admin:
   Page: create, read, update, delete
+  Post: create, read, update, delete
   TypusUser: create, read, update, delete
 
 editor:
   Page: create, read, update
+  Post: create, read, update, delete
