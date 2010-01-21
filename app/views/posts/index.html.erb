@@ -1,3 +1,7 @@
+<% content_for :title, @page.title + ' - ' %>
+<% content_for :seo_keywords, @page.seo_keywords %>
+<% content_for :seo_description, @page.seo_description %>
+
 <%= render :partial => 'layouts/header' %>	
 	<div id="body">
   	  <% @posts.each do |p| %>
@@ -6,5 +10,7 @@
     	    <%= p.content %>
     	  </div>
   	  <% end %>
+  	  
+	    <%= will_paginate @posts %>
   </div>
 <%= render :partial => 'layouts/footer' %>

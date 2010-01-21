@@ -12,7 +12,7 @@
     
   	<div id="right-col">
 	    <ul id="post-list">
-      	  <% @posts.each do |p| %>
+      	  <% @posts.first(10).each do |p| %>
         	    <li><a href="/notes/<%= p.slug %>" title="<%=h p.title %>"><%=h p.title %></a></li>
       	  <% end %>
   	  </ul>

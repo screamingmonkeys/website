@@ -27,7 +27,7 @@ Page:
   
 Post:
   fields:
-    list: title, slug, updated_at
+    list: title, slug, created_at
     form: title, slug, content, seo_description, seo_keywords
     options:
       tiny_mce:
@@ -45,7 +45,7 @@ Post:
             - 
           theme_advanced_buttons4:
             - 
-  order_by: updated_at
+  order_by: -created_at
   application: Content
     
 TypusUser:
