@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   end
   
   def show
-    @posts        = Post.all
+    @post_list    = Post.recent_ten
     @post         = Post.find_by_slug( params[:slug] )
     @current_tab  = 'notes'
     
