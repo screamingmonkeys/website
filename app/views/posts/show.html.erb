@@ -7,6 +7,7 @@
 	<div id="body">
 	  <div id="left-col">
       <h1># <%=h @post.title %></h1>
+      <p class="date">Last updated: <%=h @post.updated_at.to_s(:post_date) %></p>
       <%= @post.content %>
     </div>
     

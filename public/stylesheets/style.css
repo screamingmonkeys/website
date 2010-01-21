@@ -65,6 +65,7 @@ a:active {
   margin: -3px -6px;
   z-index: 5;
 }
+h1, h2 { font-family: "Lucida Console", "Courier New", Arial, sans-serif; }
 h1 {
   margin: 30px 0 10px 0;
   font-size: 32px;
@@ -88,7 +89,7 @@ h3 {
 p {
   margin: 20px 0;
   padding: 0;
-  line-height: 20px;
+  line-height: 22px;
 }
 strong { text-transform: uppercase; }
 ul {
@@ -116,7 +117,13 @@ li {
 .border { border: 10px solid #2f1900; }
 .note {
   font-size: 11px;
-  color: #0f0900;
+  color: #231d14;
+}
+.date {
+  font-size: 11px;
+  color: #ebd5b9;
+  padding: 0;
+  margin: 5px 0;
 }
 form {
   position: relative;
@@ -268,6 +275,38 @@ input[type="submit"] {
   opacity: 1;
 }
 #slideshow img.last-active { z-index: 9; }
+#posts { margin-bottom: -20px; }
+.pagination {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #d7c1a5;
+}
+.pagination a:link {
+  padding: 2px 0;
+  margin: 0 1px;
+}
+.pagination a:visited {
+  padding: 2px 0;
+  margin: 0 1px;
+}
+.pagination a:hover {
+  padding: 2px 1px;
+  margin: 0;
+}
+.pagination a:active {
+  padding: 2px 1px;
+  margin: 0;
+}
+.post {
+  background: #3c1d00;
+  padding: 5px 15px;
+  margin: 20px 0;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.post h2 { margin: 10px 0 0 0; }
 #left-col {
   position: relative;
   width: 560px;
@@ -297,6 +336,27 @@ input[type="submit"] {
   margin: 0;
 }
 #right-col ul li { padding: 0 0 30px 0; }
+#post-list li {
+  padding: 0 !important;
+  margin: 0 0 1px 0 !important;
+  text-transform: capitalize;
+}
+#post-list a {
+  padding: 10px 7px;
+  margin: 0;
+  width: 245px;
+  display: block;
+  background: #5b3000;
+  text-decoration: none;
+}
+#post-list a:hover {
+  background: #6f4414;
+  color: #ffe9cd;
+}
+#post-list a:active {
+  background: #6f4414;
+  color: #ffe9cd;
+}
 #footer-wrapper {
   position: relative;
   background: #302110 url(../images/bg.png) repeat;

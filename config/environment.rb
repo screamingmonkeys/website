@@ -49,6 +49,9 @@ Rails::Initializer.run do |config|
   
   end
   
+  # Custom time format
+  Time::DATE_FORMATS[:post_date] = "%B %d, %Y"
+  
   # Configuration options for LESS CSS (http://github.com/karsthammer/less-rails)
   Less::Plugin.options[:template_location] = "#{RAILS_ROOT}/app/stylesheets"
   Less::Plugin.options[:css_location]      = "#{RAILS_ROOT}/public/stylesheets"
