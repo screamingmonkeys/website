@@ -77,7 +77,7 @@ h1 {
 h2 {
   margin: 50px 0 10px 0;
   font-size: 20px;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-weight: normal;
 }
 h3 {
@@ -133,6 +133,20 @@ ol li {
   color: #ebd5b9;
   padding: 0;
   margin: 5px 0;
+}
+.floatleft {
+  position: relative;
+  float: left;
+  margin: 5px 15px 5px 0;
+  padding: 0;
+  border: 10px solid #2f1900;
+}
+.floatright {
+  position: relative;
+  float: right;
+  margin: 5px 0 5px 15px;
+  padding: 0;
+  border: 10px solid #2f1900;
 }
 form {
   position: relative;
@@ -324,7 +338,6 @@ input[type="submit"] {
 }
 #rss { line-height: 20px; }
 #rss .photo { display: none; }
-#rss h2 { text-transform: capitalize; }
 #rss ul {
   list-style: square;
   margin: -15px 0;
@@ -380,7 +393,10 @@ input[type="submit"] {
   margin: 0 auto;
   font-family: "Lucida Console", "Courier New", Arial, sans-serif;
 }
-#footer h2 { margin: 0 0 25px 0; }
+#footer h2 {
+  margin: 0 0 25px 0;
+  text-transform: lowercase;
+}
 #footer p {
   margin: 0;
   padding: 0;

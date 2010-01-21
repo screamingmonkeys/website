@@ -16,7 +16,8 @@ class PostsController < ApplicationController
   end
   
   def feed
-    @posts = Post.find(:all, :order => "created_at DESC")
+    @posts = Post.all
+    
     respond_to do |format|
       format.html
       format.rss  { render :layout => false }
