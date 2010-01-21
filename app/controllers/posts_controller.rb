@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
-  def index
+  def index    
     @current_tab  = 'notes'
     @page         = Page.find_by_permalink( @current_tab )
-    @posts        = Post.paginate :page => params[:page], :order => 'created_at DESC', :per_page => 5
+    @posts        = Post.paginate :page => params[:page], :order => 'created_at DESC', :per_page => 1
   end
   
   def show
@@ -12,6 +12,14 @@ class PostsController < ApplicationController
     
     if @post.nil?
       @post = Page.find_by_permalink("404")
+    end
+  end
+  
+  def feed
+    @posts = Post.find(:all, :order => "created_at DESC")
+    respond_to do |format|
+      format.html
+      format.rss  { render :layout => false }
     end
   end
 end

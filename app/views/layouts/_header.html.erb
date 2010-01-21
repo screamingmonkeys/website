@@ -17,6 +17,8 @@
   
   <title><%= yield :title %> The Screaming Monkeys Web Guild - Fort Wayne, Indiana</title>
 
+  <%= auto_discovery_link_tag(:rss, {:controller => "posts", :action => "feed", :format => "rss"}) %>
+
   <%= stylesheet_link_tag 'style' %>
 	<!--[if IE 7]><%= stylesheet_link_tag 'ie7' %><![endif]-->  
 	<!--[if IE 6]><%= stylesheet_link_tag 'ie6' %><![endif]-->
