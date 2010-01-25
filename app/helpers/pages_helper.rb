@@ -16,18 +16,8 @@ module PagesHelper
 
      # Pull RSS feed and parse
      if @page.permalink == "schedule"
-       coder    = HTMLEntities.new
-       feed_url = "http://api.meetup.com/events.rss/?zip=46815&group_urlname=screamingmonkeys&key=555f7b666820756c1a382f13a6b2b7e"
+       html = RSS.feed("http://api.meetup.com/events.rss/?zip=46815&group_urlname=screamingmonkeys&key=555f7b666820756c1a382f13a6b2b7e")
 
-       open(feed_url) do |http|
-         response = http.read
-         result   = RSS::Parser.parse(response, false)
-         result.items.each do |item| 
-           description = coder.decode(item.description)
-           html += "<h2>## #{item.title}</h2> <p>#{description}</p> <p>=> <a href='#{item.link}'>view on meetup.com</a></p>"
-         end
-       end 
-           
        "<div id='rss'>#{html}</div>"
      end
    end
