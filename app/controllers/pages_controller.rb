@@ -1,9 +1,7 @@
 class PagesController < ApplicationController  
-  require 'rss/2.0'
-  require 'open-uri'
-  require 'htmlentities'
 
   def show
+    @feed          = Feed.new()
     @page          = Page.find_by_permalink( params[:permalink] )
     
     if @page.nil?
@@ -13,4 +11,5 @@ class PagesController < ApplicationController
       @current_tab = @page.permalink  
     end
   end   
+  
 end

@@ -1,11 +1,15 @@
-class RSS
+class Feed
+  require 'rss/2.0'
+  require 'open-uri'
+  require 'htmlentities'
+
+  attr_reader :html
   
-  initializer
-    url  = ''
-    html = ''
+  def initialize
+    @html = ''
   end
   
-  self.feed (url)  
+  def get_data(url)
     unless url.empty?
       coder    = HTMLEntities.new
       open(url) do |http|
@@ -14,11 +18,10 @@ class RSS
       
         result.items.each do |item| 
           description = coder.decode(item.description)
-          html += "<h2>## #{item.title}</h2> <p>#{description}</p> <p>=> <a href='#{item.link}'>view on meetup.com</a></p>"
+          @html += "<h2>## #{item.title}</h2> <p>#{description}</p> <p>=> <a href='#{item.link}'>view on meetup.com</a></p>"
         end
       end
     end
-    html 
   end
   
 end

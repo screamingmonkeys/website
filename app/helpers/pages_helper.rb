@@ -16,9 +16,9 @@ module PagesHelper
 
      # Pull RSS feed and parse
      if @page.permalink == "schedule"
-       html = RSS.feed("http://api.meetup.com/events.rss/?zip=46815&group_urlname=screamingmonkeys&key=555f7b666820756c1a382f13a6b2b7e")
+       @feed.get_data("http://api.meetup.com/events.rss/?zip=46815&group_urlname=screamingmonkeys&key=555f7b666820756c1a382f13a6b2b7e")
 
-       "<div id='rss'>#{html}</div>"
+       "<div id='rss'>#{@feed.html}</div>"
      end
    end
    
