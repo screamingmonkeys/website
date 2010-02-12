@@ -12,9 +12,10 @@ class Feed
     unless url.empty?
       coder    = HTMLEntities.new
       open(url) do |http|
-        response = http.read
-        result   = RSS::Parser.parse(response, false)
-
+        response  = http.read
+        result    = RSS::Parser.parse(response, false)
+        feed_data = "" unless result.items.size == 0
+        
         result.items.each do |item| 
           description = coder.decode(item.description)
           feed_data += "<h2>## #{item.title}</h2> <p>#{description}</p> <p>=> <a href='#{item.link}'>view on meetup.com</a></p>"
