@@ -1,31 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset
-
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
-  <loc>http://www.screamingmonkeys.org/</loc>
+  <loc>http://screamingmonkeys.org/</loc>
   <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
 </url>
-
 <url>
-  <loc>http://www.screamingmonkeys.org/schedule</loc>
+  <loc>http://screamingmonkeys.org/email-list-signup</loc>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
-  <loc>http://www.screamingmonkeys.org/email-list-signup</loc>
+  <loc>http://screamingmonkeys.org/schedule</loc>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>http://screamingmonkeys.org/notes</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://screamingmonkeys.org/notes/sweetwater-php-developer-job</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://screamingmonkeys.org/notes/screencast-simple-version-control-with-git</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://screamingmonkeys.org/notes/lost-scarf</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://screamingmonkeys.org/notes/event-audio-january-2010</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
 </urlset>
