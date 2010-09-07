@@ -1,8 +1,8 @@
-typus --source http://gemcutter.org
+typus
 acts_as_list
 acts_as_tree
 paperclip
 kete-tiny_mce --source http://gems.github.com
-htmlentities --source http://gems.github.com
-less --version 1.2.20
+htmlentities
+less --version 1.2.21
 mislav-will_paginate --source http://gems.github.com
