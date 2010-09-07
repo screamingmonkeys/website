@@ -19,13 +19,13 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem 'htmlentities', :source => 'http://gems.github.com'
-  config.gem 'typus', :source => 'http://gemmcutter.org'
+  config.gem 'htmlentities'
+  config.gem 'typus'
   config.gem 'acts_as_list'
   config.gem 'acts_as_tree'
   config.gem 'paperclip'
   config.gem 'kete-tiny_mce', :lib => 'tiny_mce', :source => 'http://gems.github.com'
-  config.gem 'less', :version => '1.2.20', :lib => false
+  config.gem 'less', :version => '1.2.21', :lib => false
   config.gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com'
 
   # Only load the plugins named here, in the order given (default is alphabetical).

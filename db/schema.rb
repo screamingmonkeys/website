@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(:version => 20100120223603) do
     t.string   "permalink"
     t.string   "title"
     t.text     "content"
-    t.text     "seo_keywords",    :limit => 255
-    t.text     "seo_description", :limit => 255
+    t.text     "seo_keywords"
+    t.text     "seo_description"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "sort_by"
