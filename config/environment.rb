@@ -23,7 +23,7 @@ Rails::Initializer.run do |config|
   config.gem 'typus'
   config.gem 'acts_as_list'
   config.gem 'acts_as_tree'
-  config.gem 'paperclip'
+  #config.gem 'paperclip'
   config.gem 'kete-tiny_mce', :lib => 'tiny_mce', :source => 'http://gems.github.com'
   config.gem 'less', :version => '1.2.21', :lib => false
   config.gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com'

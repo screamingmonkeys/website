@@ -1,7 +1,6 @@
 typus
 acts_as_list
 acts_as_tree
-paperclip
 kete-tiny_mce --source http://gems.github.com
 htmlentities
 less --version 1.2.21
