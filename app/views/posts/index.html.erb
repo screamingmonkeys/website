@@ -9,8 +9,7 @@
   	<div id="posts">
   	  <% @posts.each do |p| %>
   	    <div class="post">
-    	    <h2># <a href="/notes/<%= p.slug %>" title="<%=h p.title %>"><%=h p.title %></a></h2>
-    	    <%= snippet(p.content, 45, "... <p><a href='/notes/#{p.slug}'>read more</a> &rarr;</p>") %>
+    	    <h2><a href="/notes/<%= p.slug %>" title="<%=h p.title %>"><%=h p.title %></a></h2>
     	  </div>
   	  <% end %>
 	  

@@ -6,7 +6,7 @@
 <%= render :partial => 'layouts/header' %>	
 	<div id="body">
 	  <div id="left-col">
-      <h1># <%=h @post.title %></h1>
+      <h2 class="title"><span class="method-name">#</span><%=h @post.title %></h2>
       <p class="date">Last updated: <%=h @post.updated_at.to_s(:post_date) %></p>
       <%= @post.content %>
     </div>
