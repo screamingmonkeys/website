@@ -1,6 +1,6 @@
 /* @group Defaults */
 
-html { background: #000; height: 100%; margin-bottom: 1px; }
+html { background: #444; height: 100%; margin-bottom: 1px; }
 body { color: #000; font-family: "Lucida Grande", Helvetica, Arial, sans-serif; font-size: 75%; }
 label { display: block; font-weight: bold; margin-bottom: 5px; margin-top: 0px; }
 strong { font-weight: bold; }
@@ -24,7 +24,7 @@ a.on { color: #333; font-weight: bold; text-decoration: underline; }
 /* @group Wrappers */
 
 #header_wrapper {
-  background: #000;
+  background: #444;
   margin: 0 auto;
   padding: 0 10px;
   width: 940px;
@@ -45,7 +45,7 @@ a.on { color: #333; font-weight: bold; text-decoration: underline; }
 /* @group Header */
 
 #header {
-  background: #000;
+  background: #444;
   color: #FFF;
   margin: 0 auto;
   padding: 1em 0;
@@ -79,15 +79,15 @@ a.on { color: #333; font-weight: bold; text-decoration: underline; }
 #content ol { margin: 1em 2em; }
 #content ul { margin: 0 1.5em; }
 #content li { list-style: square; line-height: 20px; }
-#content ul li { list-style: square; }
+#content ul li { list-style: none; }
 #content p { margin: 0 0 1em 0; }
 #content p a { text-decoration: underline; }
 #content p a:hover { color: #408BB6; }
-#content table.typus { background: #000; margin: 1em 0;  }
+#content table.typus { background: #444; margin: 1em 0;  }
 #content h2+table.typus { margin: 0; }
 
 #content pre {
-  background: #000;
+  background: #444;
   color: #FFF;
   font-size: 1.25em;
   margin: 1em 0;
@@ -128,8 +128,8 @@ a.on { color: #333; font-weight: bold; text-decoration: underline; }
 
 /* @group Footer */
 
-#footer_wrapper { background: #000; }
-#footer { background: #000; margin: 0 auto; width: 940px; }
+#footer_wrapper { background: #444; }
+#footer { background: #444; margin: 0 auto; width: 940px; }
 #footer .left { float: left; }
 #footer .right { float: right; }
 #footer a { color: #FFF; font-weight: normal; text-decoration: underline; }
@@ -153,33 +153,39 @@ fieldset small { font-size: 0.9em; font-weight: normal; }
 
 fieldset.inputs { }
 
-  fieldset.inputs input[type='text'], 
-  fieldset.inputs input[type='password'] {
+  input[type='text'], 
+  input[type='password'] {
     border: 1px solid #999;
-    font-size: 20px;
+    font-size: 14px;
     padding: 5px;
-    width: 691px;
+    margin: 0 0 10px 0;
+    width: 400px;
   }
 
-  fieldset.inputs input[type='text']:focus, 
-  fieldset.inputs input[type='password']:focus, {
+  input[type='text']:focus, 
+  input[type='password']:focus, {
     background: #FFFCE1;
   }
 
-  fieldset.inputs textarea {
+  textarea {
     border: 1px solid #999;
     font-family: "Courier";
-    font-size: 14px;
-    padding: 3px;
-    width: 691px;
+    font-size: 12px;
+    padding: 10px;
+    width: 660px;
   }
 
-  fieldset.inputs select { border: 1px solid #999; font-size: 1.20em; }
+  select { border: 1px solid #999; font-size: 1.20em; }
 
-  fieldset.inputs textarea:focus { background: #FFFCE1; }
-  fieldset.inputs label.inline_label { display: inline; }
+  textarea:focus { background: #FFFCE1; }
+  label.inline_label { display: inline; }
 
 fieldset.buttons { }
+input.button {
+  margin-top: 15px;
+  height: 25px;
+  width: auto;
+}
 
 /* @end */
 
@@ -192,7 +198,7 @@ fieldset.buttons { }
 #content table.typus td.right { text-align: right; }
 #content table.typus tr.even { background: #FFF!important; }
 #content table.typus tr.even:hover,
-#content table.typus tr.odd:hover { background: #000!important; color: #FFF; }
+#content table.typus tr.odd:hover { background: #999!important; color: #FFF; }
 #content table.typus tr.even:hover a,
 #content table.typus tr.odd:hover a { color: #FFF!important; }
 #content table.typus tr.odd { background: #F5F5F5; }
@@ -284,7 +290,7 @@ input#search { border: 1px solid #999; font-size: 1.2em; padding: 3px; }
 }
 
 .pagination a:hover,
-.pagination a:active { background: #000; color: #FFF; }
+.pagination a:active { background: #444; color: #FFF; }
 
 .pagination span.current {
   background-color: #408BB6;
