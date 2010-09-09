@@ -27,7 +27,7 @@ body {
   color: #ffe9cd;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+  font-family: "Helvetica Neue", "Lucida Grande" "Arial", sans-serif;
   text-align: center;
   z-index: 1;
 }
@@ -68,6 +68,7 @@ a:active {
 h1, h2 {
   font-family: "Lucida Console", "Courier New", Arial, sans-serif;
   background: #3c1d00;
+  border-top: 1px solid #5b3000;
   border-bottom: 1px solid #5b3000;
   font-weight: normal;
 }
@@ -75,7 +76,7 @@ h1 {
   margin: 30px 0 10px 0;
   font-size: 32px;
   text-transform: lowercase;
-  padding: 0 0 4px 0;
+  padding: 4px;
 }
 h2 {
   margin: 50px 0 10px 0;
@@ -83,24 +84,30 @@ h2 {
   text-transform: uppercase;
 }
 h3 {
-  margin: 35px 0 5px 0;
+  margin: 45px 0 5px 0;
   font-size: 16px;
   text-transform: capitalize;
-  font-weight: bold;
+  font-weight: normal;
 }
 p {
   margin: 20px 0;
   padding: 0;
-  line-height: 22px;
+  line-height: 20px;
 }
 strong { text-transform: uppercase; }
+hr {
+  margin: 50px 0;
+  background: none;
+  border: 1px dashed #61421e;
+}
 ul {
-  list-style: none;
+  list-style: square;
   padding: 5px 0 5px 40px;
 }
 ul li {
   list-style-position: outside;
   padding: 5px 0;
+  line-height: 22px;
 }
 ol {
   list-style: decimal;
@@ -350,9 +357,18 @@ input[type="submit"] {
   float: left;
   margin: 0 10px 10px 0;
 }
+#left-col h2.title { margin-top: 0; }
 #left-col p.date { margin: 0 0 30px 0; }
+#left-col img { border: 10px solid #3c1d00; }
 #left-col iframe { border: 10px solid #3c1d00; }
 #left-col object { border: 10px solid #3c1d00; }
+#left-col img {
+  position: relative;
+  float: right;
+  margin: 5px 0 5px 15px;
+  padding: 0;
+  border: 10px solid #3c1d00;
+}
 #left-col #rss { line-height: 20px; }
 #left-col #rss .photo { display: none; }
 #left-col #rss ul {
